@@ -1,0 +1,242 @@
+[
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1114,
+    "lib_court": "BOULANGERIE",
+    "lib_long": "BOULANGERIE POPULAIRE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 4,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1107,
+    "lib_court": "CHANTIER",
+    "lib_long": "CHANTIER",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 18,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1129,
+    "lib_court": "CLINIQUE",
+    "lib_long": "CLINIQUE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 20,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1105,
+    "lib_court": "COMMERCE",
+    "lib_long": "COMMERCE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 5,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1116,
+    "lib_court": "ECLAIRAGE PUBLIC",
+    "lib_long": "ECLAIRAGE PUBLIC",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 7,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1122,
+    "lib_court": "ECOLE",
+    "lib_long": "ECOLE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 8,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1112,
+    "lib_court": "FINANCES NATIONALES",
+    "lib_long": "FINANCES NATIONALES",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 13,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1115,
+    "lib_court": "GENERAL",
+    "lib_long": "GENERAL",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 9,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1110,
+    "lib_court": "GENERALE CC",
+    "lib_long": "GENERALE CC",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 3,
+    "code_suppr": "NULL",
+    "id_parent": 41
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1127,
+    "lib_court": "HAUT RESIDENTIEL",
+    "lib_long": "HAUT RESIDENTIEL",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 17,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1120,
+    "lib_court": "HOTEL",
+    "lib_long": "HOTEL",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 10,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1109,
+    "lib_court": "INDUSTRIE",
+    "lib_long": "INDUSTRIE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 11,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1126,
+    "lib_court": "ONG",
+    "lib_long": "ORGANISATION NON GOUVERNEMENTALE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 16,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1113,
+    "lib_court": "PME",
+    "lib_long": "PETITE ET MOYENNE ENTR.",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 12,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1130,
+    "lib_court": "PHARMACIE",
+    "lib_long": "PHARMACIE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 21,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1128,
+    "lib_court": "POSTE MT/HT",
+    "lib_long": "POSTE DE DISTRIBUTION MT/HT",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 19,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1125,
+    "lib_court": "REPRESENTATION GOUV",
+    "lib_long": "REPRESENTATION GOUVERNEMENTALE",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 15,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1101,
+    "lib_court": "RESIDENTIEL DOM/CC",
+    "lib_long": "RESIDENTIEL DOMESTIQUE CC",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 1,
+    "code_suppr": "NULL",
+    "id_parent": 41
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1103,
+    "lib_court": "RESIDENTIEL DOM/CS",
+    "lib_long": "RESIDENTIEL DOMESTIQUE CS",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 6,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1106,
+    "lib_court": "RESIDENTIEL SOCIAL/CC",
+    "lib_long": "RESIDENTIEL SOCIAL CC",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 2,
+    "code_suppr": "NULL",
+    "id_parent": 41
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1102,
+    "lib_court": "RESIDENTIEL SOCIAL/CS",
+    "lib_long": "RESIDENTIEL SOCIAL CS",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 14,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1100,
+    "lib_court": "USAGE INCONNU",
+    "lib_long": "USAGE INCONNU",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 0,
+    "code_suppr": "NULL",
+    "id_parent": "NULL"
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1100,
+    "lib_court": "USAGE INCONNU",
+    "lib_long": "USAGE INCONNU",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 0,
+    "code_suppr": "NULL",
+    "id_parent": "42"
+  },
+  {
+    "code_table": "CCLI",
+    "id_ligne": 1100,
+    "lib_court": "USAGE INCONNU",
+    "lib_long": "USAGE INCONNU",
+    "nom_table": "CATEG CLIENT",
+    "code_ligne": 0,
+    "code_suppr": "NULL",
+    "id_parent": "41"
+  }
+]

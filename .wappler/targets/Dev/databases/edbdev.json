@@ -1,0 +1,623 @@
+{
+  "type": "postgres",
+  "connection": {
+    "host": "192.168.8.50",
+    "port": 5444,
+    "user": "tspuser",
+    "password": "tspuser",
+    "database": "edbdev"
+  },
+  "direct": true,
+  "schema": {
+    "schemas": [
+      "aq$_agent",
+      "aq$_descriptor",
+      "aq$_reg_info",
+      "dbms_alert",
+      "dbms_aq",
+      "dbms_aqadm",
+      "dbms_crypto",
+      "dbms_job",
+      "dbms_lob",
+      "dbms_lock",
+      "dbms_mview",
+      "dbms_output",
+      "dbms_pipe",
+      "dbms_profiler",
+      "dbms_random",
+      "dbms_redact",
+      "dbms_rls",
+      "dbms_scheduler",
+      "dbms_session",
+      "dbms_sql",
+      "dbms_utility",
+      "msg_prop_t",
+      "pelerinage",
+      "sys",
+      "topology",
+      "tsptest",
+      "utl_encode",
+      "utl_file",
+      "utl_http",
+      "utl_mail",
+      "utl_raw",
+      "utl_smtp",
+      "utl_tcp",
+      "utl_url"
+    ],
+    "tables": {
+      "tsptest.spatial_ref_sys": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.anomalie_releve": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.compl_r_mt": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.tables_valeurs": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.section_employe": "section",
+          "tsptest.n_doc_analyse": "type_intervention",
+          "tsptest.demande_web": "usage",
+          "tsptest.role": "type_role",
+          "tsptest.suiviebordereau": "statut",
+          "tsptest.suivi_tournee": "statut_tournee",
+          "tsptest.releve": "nature_releve",
+          "tsptest.cellule_clientele": "type_cellule",
+          "tsptest.log_suiviebordereau": "statut",
+          "tsptest.lot_fac_periode": "methodefact",
+          "tsptest.suivi_lot_fac": "statut_groupe",
+          "tsptest.point_livraison": "acces_compteur",
+          "tsptest.compteur": "etat_cpt",
+          "tsptest.modele_compteur": "fabricant"
+        }
+      },
+      "tsptest.modele_tsp": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.tsp": "modele_id"
+        }
+      },
+      "tsptest.employe": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.section_employe": "employe",
+          "tsptest.compte": "user_crea",
+          "tsptest.tsp": "releveur",
+          "tsptest.tourne_rp": "matricule",
+          "tsptest.suiviebordereau": "user_maj",
+          "tsptest.log_affectation_appareil_mobiles": "employe_id",
+          "tsptest.group_user": "id_matricule",
+          "tsptest.cellule_clientele": "mat_respo",
+          "tsptest.log_suiviebordereau": "user_crea",
+          "tsptest.client": "id_utilis_maj",
+          "tsptest.att_section_emp": "mat",
+          "tsptest.point_livraison": "id_utilis_maj",
+          "tsptest.compteur": "id_utilis_maj",
+          "tsptest.affectation_appareil_mobiles": "employe_id"
+        }
+      },
+      "tsptest.section_employe": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.appareil_probleme": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.n_doc_analyse": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.compte": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.n_type_document": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.sim_mobile": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.log_affectation_appareil_mobiles": "sim_id",
+          "tsptest.affectation_appareil_mobiles": "sim_mobile_id"
+        }
+      },
+      "tsptest.demande_web": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "columns": {
+          "num_dmd": {
+            "db": {
+              "type": "string",
+              "maxLength": 9,
+              "primary": true,
+              "unique": true,
+              "nullable": false
+            }
+          },
+          "id_client": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "mail": {
+            "db": {
+              "type": "string",
+              "maxLength": 128,
+              "primary": false,
+              "unique": false,
+              "nullable": false
+            }
+          },
+          "tel": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": false
+            }
+          },
+          "nbr_clim": {
+            "db": {
+              "type": "decimal",
+              "default": 0,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "nbr_piece": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "nbr_refrig": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "ps_sht": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "ps_calc": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "pl_proche": {
+            "db": {
+              "type": "string",
+              "maxLength": 10,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "grp_clientel": {
+            "db": {
+              "type": "reference",
+              "primary": false,
+              "unique": false,
+              "nullable": true,
+              "references": "id_ligne",
+              "inTable": "tables_valeurs",
+              "referenceType": "decimal",
+              "onUpdate": "NO ACTION",
+              "onDelete": "NO ACTION"
+            }
+          },
+          "statut": {
+            "db": {
+              "type": "reference",
+              "primary": false,
+              "unique": false,
+              "nullable": true,
+              "references": "id_ligne",
+              "inTable": "tables_valeurs",
+              "referenceType": "decimal",
+              "onUpdate": "NO ACTION",
+              "onDelete": "NO ACTION"
+            }
+          },
+          "usage": {
+            "db": {
+              "type": "reference",
+              "primary": false,
+              "unique": false,
+              "nullable": true,
+              "references": "id_ligne",
+              "inTable": "tables_valeurs",
+              "referenceType": "decimal",
+              "onUpdate": "NO ACTION",
+              "onDelete": "NO ACTION"
+            }
+          },
+          "lieu_residence": {
+            "db": {
+              "type": "string",
+              "maxLength": 1,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "type_interv": {
+            "db": {
+              "type": "reference",
+              "primary": false,
+              "unique": false,
+              "nullable": false,
+              "references": "id_ligne",
+              "inTable": "tables_valeurs",
+              "referenceType": "decimal",
+              "onUpdate": "NO ACTION",
+              "onDelete": "NO ACTION"
+            }
+          },
+          "modele_doc": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "date_dmd": {
+            "db": {
+              "type": "timestamp",
+              "primary": false,
+              "unique": false,
+              "nullable": false
+            }
+          },
+          "mail_active": {
+            "db": {
+              "type": "string",
+              "maxLength": 1,
+              "primary": false,
+              "unique": false,
+              "nullable": false
+            }
+          },
+          "statut_dmd": {
+            "db": {
+              "type": "reference",
+              "primary": false,
+              "unique": false,
+              "nullable": false,
+              "references": "id_ligne",
+              "inTable": "tables_valeurs",
+              "referenceType": "decimal",
+              "onUpdate": "NO ACTION",
+              "onDelete": "NO ACTION"
+            }
+          },
+          "nom": {
+            "db": {
+              "type": "string",
+              "maxLength": 60,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "adresse": {
+            "db": {
+              "type": "string",
+              "maxLength": 200,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "motif": {
+            "db": {
+              "type": "string",
+              "maxLength": 200,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "num_dossier": {
+            "db": {
+              "type": "decimal",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          }
+        }
+      },
+      "tsptest.tsp": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.suiviebordereau": "numtsp",
+          "tsptest.log_affectation_appareil_mobiles": "tsp_id",
+          "tsptest.affectation_appareil_mobiles": "tsp_id"
+        }
+      },
+      "tsptest.supports": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.point_livraison": "code_support"
+        }
+      },
+      "tsptest.log_releve_correction": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.type_accessoire": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.accessoire": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.tourne_rp": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.role": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.accessoire_affectations": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.poste": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.supports": "code_poste"
+        }
+      },
+      "tsptest.suiviebordereau": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.suivi_tournee": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.log_affectation_appareil_mobiles": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.equipe_app_mobile": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.releve": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.compl_r_mt": "num_releve"
+        }
+      },
+      "tsptest.group_user": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.groupe": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.group_user": "id_group"
+        }
+      },
+      "tsptest.tourne_releve": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.tourne_rp": "num_tourne",
+          "tsptest.point_livraison": "num_tourne"
+        }
+      },
+      "tsptest.groupe_fac": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.lot_facturation": "num_gr_fac",
+          "tsptest.zone_geographique": "groupe_fac"
+        }
+      },
+      "tsptest.cellule_clientele": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.lot_facturation": "num_cellule",
+          "tsptest.client": "num_cellule",
+          "tsptest.zone_geographique": "num_cellule"
+        }
+      },
+      "tsptest.lot_facturation": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.lot_fac_periode": "num_lot_fac"
+        }
+      },
+      "tsptest.log_suiviebordereau": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.periode": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.log_suiviebordereau": "periode",
+          "tsptest.lot_fac_periode": "id_periode"
+        }
+      },
+      "tsptest.lot_fac_periode": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.suivi_lot_fac": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.client": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.compte": "id_client",
+          "tsptest.role": "num_client"
+        }
+      },
+      "tsptest.att_section_emp": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.contrat": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.role": "num_contrat",
+          "tsptest.point_livraison": "id_dernier_contrat"
+        }
+      },
+      "tsptest.point_livraison": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.compteur": "num_pl"
+        }
+      },
+      "tsptest.compteur": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.compl_r_mt": "num_cpteur"
+        }
+      },
+      "tsptest.facture": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.affectation_appareil_mobiles": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.ligne_facture": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.autre_mvt": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.ligne_mvt": {
+        "db": {
+          "schema": "tsptest"
+        }
+      },
+      "tsptest.zone_geographique": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.supports": "num_zonegeo"
+        }
+      },
+      "tsptest.lieu_geographique": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.poste": "num_lieugeo",
+          "tsptest.zone_geographique": "num_lieugeo"
+        }
+      },
+      "tsptest.modele_compteur": {
+        "db": {
+          "schema": "tsptest"
+        },
+        "refs": {
+          "tsptest.compteur": "modele_cpteur"
+        }
+      }
+    },
+    "views": {}
+  },
+  "case": "snake"
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id_ligne": 1501,
+    "lib_long": "DEMANDE DE BRANCHEMENT"
+  },
+  {
+    "id_ligne": 1512,
+    "lib_long": "ABONNEMENT"
+  },
+  {
+    "id_ligne": 520,
+    "lib_long": "AUGMENTATION PS"
+  },
+  {
+    "id_ligne": 514,
+    "lib_long": "BON POUR DEPOSE COMPTEUR"
+  },
+  {
+    "id_ligne": 515,
+    "lib_long": "BON POUR REPOSE COMPTEUR"
+  },
+  {
+    "id_ligne": 524,
+    "lib_long": "CHANGEMENT COMPTAGE"
+  },
+  {
+    "id_ligne": 71,
+    "lib_long": "DEMANDE REOUVERTURE"
+  },
+  {
+    "id_ligne": 70,
+    "lib_long": "DEMANDE RESILIATION"
+  },
+  {
+    "id_ligne": 75,
+    "lib_long": "DEPANNAGE"
+  },
+  {
+    "id_ligne": 522,
+    "lib_long": "DEPLACEMENT CABLE"
+  },
+  {
+    "id_ligne": 519,
+    "lib_long": "DEPLACEMENT COMPTAGE"
+  },
+  {
+    "id_ligne": 523,
+    "lib_long": "DEPLACEMENT RESEAU-PYLONE"
+  },
+  {
+    "id_ligne": 79,
+    "lib_long": "DEPOSE_COMPTEUR_SUITE_FRAUDE"
+  },
+  {
+    "id_ligne": 528,
+    "lib_long": "DEVIS_EXCEPTIONNEL"
+  },
+  {
+    "id_ligne": 521,
+    "lib_long": "DIMINUTION PS"
+  },
+  {
+    "id_ligne": 74,
+    "lib_long": "ETALONNAGE"
+  },
+  {
+    "id_ligne": 526,
+    "lib_long": "ETAT_SOLDE"
+  },
+  {
+    "id_ligne": 72,
+    "lib_long": "REMISE EN ETAT DE FRAUDE"
+  },
+  {
+    "id_ligne": 1514,
+    "lib_long": "REPOSE COMPTEUR"
+  },
+  {
+    "id_ligne": 184,
+    "lib_long": "REPOSE_COMPTEUR_SUITE_FRAUDE"
+  },
+  {
+    "id_ligne": 525,
+    "lib_long": "VENTES MATERIELS"
+  },
+  {
+    "id_ligne": 73,
+    "lib_long": "VERIFICATION/CONTROLE"
+  }
+]

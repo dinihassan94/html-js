@@ -1,0 +1,33 @@
+{
+  "routes": [
+    {
+      "path": "/index",
+      "page": "index"
+    },
+    {
+      "path": "/E-services/FicheDmd",
+      "page": "E-services/FicheDmd",
+      "layout": "main"
+    },
+    {
+      "path": "/",
+      "page": "E-services/FicheDmd",
+      "layout": "main"
+    },
+    {
+      "path": "/E-services/FicheDemande",
+      "page": "E-services/FicheDemande",
+      "layout": "fichedmd"
+    },
+    {
+      "path": "/E-services/TelechargementFicheDmd",
+      "page": "E-services/TelechargementFicheDmd",
+      "layout": "fichedmd"
+    },
+    {
+      "path": "/E-services/gmail",
+      "page": "E-services/gmail",
+      "layout": "fichedmd"
+    }
+  ]
+}

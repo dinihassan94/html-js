@@ -1,0 +1,2712 @@
+[
+  {
+    "num_ligne": 358,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 525,
+    "type_logement": 0,
+    "modele": "CHANTIER/ VENTES MATERIELS",
+    "type_doc_tex": 202,
+    "keyrow": "42$525$1107"
+  },
+  {
+    "num_ligne": 345,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "PETIT COMMERCE",
+    "type_doc_tex": "100,101,325,326",
+    "keyrow": "41$1512$1110"
+  },
+  {
+    "num_ligne": 353,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT CS GENERAL",
+    "type_doc_tex": "204,202",
+    "keyrow": "42$1512$1107"
+  },
+  {
+    "num_ligne": 352,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN DALLE",
+    "type_doc_tex": "104,105,109,110,214,215",
+    "keyrow": "41$515$1110"
+  },
+  {
+    "num_ligne": 44,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "CONTRAT AGENT ACTIF",
+    "type_doc_tex": "100,101,201,212,204,325,326",
+    "keyrow": "42$1512$1103"
+  },
+  {
+    "num_ligne": 386,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOTISSEMENT SOCIAL - PED  (LOT)",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 354,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 528,
+    "type_logement": 0,
+    "modele": "SOCIAL CC/ DEVIS EXCEPTIONEL",
+    "type_doc_tex": 202,
+    "keyrow": "41$528$1106"
+  },
+  {
+    "num_ligne": 357,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 525,
+    "type_logement": 0,
+    "modele": "ONG/ VENTES MATERIELS",
+    "type_doc_tex": 202,
+    "keyrow": "42$525$1126"
+  },
+  {
+    "num_ligne": 360,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRCHT CS CHANTIER/PERS. MORALE (MARCHE)",
+    "type_doc_tex": "202,316",
+    "keyrow": "42$1501$1107"
+  },
+  {
+    "num_ligne": 349,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "COMMERCIAL / LOGEMENT EN DUR",
+    "type_doc_tex": "100,101,104,147,200,325,326",
+    "keyrow": "41$1501$1110"
+  },
+  {
+    "num_ligne": 382,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 523,
+    "type_logement": 0,
+    "modele": "FINANCES / DEPL. RESEAU PYLONE",
+    "type_doc_tex": 202,
+    "keyrow": "42$523$1112"
+  },
+  {
+    "num_ligne": 397,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 521,
+    "type_logement": 0,
+    "modele": "COMMERCE / DIMINUTION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$521$1105"
+  },
+  {
+    "num_ligne": 380,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR SUITE INCENDIE / REGION",
+    "type_doc_tex": 312,
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 396,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 528,
+    "type_logement": 0,
+    "modele": "HOTEL / DEVIS EXCEPTIONNEL",
+    "type_doc_tex": 202,
+    "keyrow": "42$528$1120"
+  },
+  {
+    "num_ligne": 46,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "CONTRAT AGENT RETRAITE",
+    "type_doc_tex": "100,101,201,204,212,200,325,326",
+    "keyrow": "42$1512$1103"
+  },
+  {
+    "num_ligne": 47,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "CONTRAT AGENT DECEDE",
+    "type_doc_tex": "100,101,114,115,201,204,212,200,325,326",
+    "keyrow": "42$1512$1103"
+  },
+  {
+    "num_ligne": 350,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 525,
+    "type_logement": 0,
+    "modele": "GENERALE CS/ VENTES MATERIELS",
+    "type_doc_tex": 202,
+    "keyrow": "42$525$1115"
+  },
+  {
+    "num_ligne": 98,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 520,
+    "type_logement": 1201,
+    "modele": "AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1127"
+  },
+  {
+    "num_ligne": 99,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 521,
+    "type_logement": 1201,
+    "modele": "DMIMUTION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$521$1128"
+  },
+  {
+    "num_ligne": 313,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABONNEMENT/ DOM/ REGION",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 330,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRCHT CS CHANTIER/PERSONNE MORALE",
+    "type_doc_tex": "129,307,202,104,109,110,214,215,140,139",
+    "keyrow": "42$1501$1107"
+  },
+  {
+    "num_ligne": 45,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT CS GENERAL",
+    "type_doc_tex": "202,204",
+    "keyrow": "42$1512$1115"
+  },
+  {
+    "num_ligne": 309,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR SUITE INCENDIE / EN DUR /SUCC ENFANT",
+    "type_doc_tex": "104,105,219,218,115",
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 310,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR SUITE INCENDIE / EN DUR /SUCC EPOUSE",
+    "type_doc_tex": "104,105,219,218,115,114",
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 96,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 523,
+    "type_logement": 1201,
+    "modele": "DEPLACEMENT RESEAU-PYLONE",
+    "type_doc_tex": 202,
+    "keyrow": "42$523$1125"
+  },
+  {
+    "num_ligne": 322,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ DEPL.COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1125"
+  },
+  {
+    "num_ligne": 316,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "DEPLACEMENT CABLE VOISIN",
+    "type_doc_tex": "104,303,147",
+    "keyrow": "42$522$1103"
+  },
+  {
+    "num_ligne": 85,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/HOTEL",
+    "type_doc_tex": "105,129,202,104",
+    "keyrow": "42$1501$1120"
+  },
+  {
+    "num_ligne": 342,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 521,
+    "type_logement": 0,
+    "modele": "GENERAL/ DIMINUTION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$521$1115"
+  },
+  {
+    "num_ligne": 87,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT ECOLE",
+    "type_doc_tex": "105,129,202,104",
+    "keyrow": "42$1501$1122"
+  },
+  {
+    "num_ligne": 88,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "ADMINISTRATION PUBLIQUES / ETRANGERES / PARAPUBLIC",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$1501$1115"
+  },
+  {
+    "num_ligne": 43,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT PME",
+    "type_doc_tex": "129,202,204",
+    "keyrow": "42$1512$1113"
+  },
+  {
+    "num_ligne": 89,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN DALLE",
+    "type_doc_tex": "104,105,107,108,109,110,214,215",
+    "keyrow": "41$515$1101"
+  },
+  {
+    "num_ligne": 90,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 1203,
+    "modele": "REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN PLANCHE",
+    "type_doc_tex": "104,105,147",
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 91,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR SUITE INCENDIE",
+    "type_doc_tex": "218,104,105",
+    "keyrow": "41$515$1101"
+  },
+  {
+    "num_ligne": 97,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "ACHAT DE MATERIELS",
+    "type_doc_tex": 202,
+    "keyrow": "42$1501$1115"
+  },
+  {
+    "num_ligne": 202,
+    "type_client": 42,
+    "categ_client": 1129,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "CLINIQUE /AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1129"
+  },
+  {
+    "num_ligne": 203,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "COMMERCE/AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1105"
+  },
+  {
+    "num_ligne": 204,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "ECLAIRAGE PUBLIC/AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1116"
+  },
+  {
+    "num_ligne": 205,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "ECOLE/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1122"
+  },
+  {
+    "num_ligne": 206,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1112"
+  },
+  {
+    "num_ligne": 207,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "GENERAL/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1115"
+  },
+  {
+    "num_ligne": 208,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "HAUT RESIDENTIEL/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1127"
+  },
+  {
+    "num_ligne": 209,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "HOTEL/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1120"
+  },
+  {
+    "num_ligne": 210,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "INDUSTRIE/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1109"
+  },
+  {
+    "num_ligne": 211,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "ONG/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1126"
+  },
+  {
+    "num_ligne": 212,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1130"
+  },
+  {
+    "num_ligne": 213,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "PME/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1113"
+  },
+  {
+    "num_ligne": 214,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "POSTE MT/HT/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1128"
+  },
+  {
+    "num_ligne": 215,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1125"
+  },
+  {
+    "num_ligne": 216,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1103"
+  },
+  {
+    "num_ligne": 217,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CS/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1102"
+  },
+  {
+    "num_ligne": 218,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "BOULANGERIE/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1114"
+  },
+  {
+    "num_ligne": 219,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "CHANTIER/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1107"
+  },
+  {
+    "num_ligne": 220,
+    "type_client": 42,
+    "categ_client": 1129,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "CLINIQUE / CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1129"
+  },
+  {
+    "num_ligne": 221,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "COMMERCE/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1105"
+  },
+  {
+    "num_ligne": 222,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "ECLAIRAGE PUBLIC/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1116"
+  },
+  {
+    "num_ligne": 346,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOTISSEMENT GENERAL/SUCCESSION - ENFANTS",
+    "type_doc_tex": "100,101,104,105,115,200,312,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 66,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR- GABODE/HARAMOUS/ DOM",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,139,140,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 406,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "DOSSIER FRAUDE PPP",
+    "type_doc_tex": 221,
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 348,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOTISSEMENT GENERAL / DROIT AU LOGEMENT",
+    "type_doc_tex": "100,101,104,105,200,312,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 318,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOGEMENT EN DUR/SUCCESSION-EPOUSE/REGION",
+    "type_doc_tex": "100,101,104,114,115,147,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 311,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOGEMENT EN BOIS/ DOM/ REGION",
+    "type_doc_tex": "100,101,104,141,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 78,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENTS SOCIAUX COMMUNS",
+    "type_doc_tex": "100,101,104,105,112,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 394,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/PROCURATION/AVEC T.O.P.",
+    "type_doc_tex": "100,101,104,105,141,200,202,318,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 405,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. EPOUX(SE)/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,114,115,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 223,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "ECOLE/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1122"
+  },
+  {
+    "num_ligne": 224,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1112"
+  },
+  {
+    "num_ligne": 225,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "GENERAL/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1115"
+  },
+  {
+    "num_ligne": 226,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "HAUT RESIDENTIEL/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1127"
+  },
+  {
+    "num_ligne": 227,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "HOTEL/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1120"
+  },
+  {
+    "num_ligne": 228,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "INDUSTRIE/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1109"
+  },
+  {
+    "num_ligne": 229,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "ONG/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1126"
+  },
+  {
+    "num_ligne": 230,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1130"
+  },
+  {
+    "num_ligne": 231,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "PME/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1113"
+  },
+  {
+    "num_ligne": 232,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "POSTE MT/HT/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1128"
+  },
+  {
+    "num_ligne": 233,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1125"
+  },
+  {
+    "num_ligne": 234,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1103"
+  },
+  {
+    "num_ligne": 235,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CS/ CHGMT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$524$1102"
+  },
+  {
+    "num_ligne": 236,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "BOULANGERIE/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1114"
+  },
+  {
+    "num_ligne": 237,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "CHANTIER/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1107"
+  },
+  {
+    "num_ligne": 238,
+    "type_client": 42,
+    "categ_client": 1129,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "CLINIQUE/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1129"
+  },
+  {
+    "num_ligne": 239,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "COMMERCE/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1105"
+  },
+  {
+    "num_ligne": 240,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "ECLAIRAGE PUBLIC/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1116"
+  },
+  {
+    "num_ligne": 241,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "ECOLE/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1122"
+  },
+  {
+    "num_ligne": 242,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1112"
+  },
+  {
+    "num_ligne": 243,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "GENERAL/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1115"
+  },
+  {
+    "num_ligne": 244,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "HAUT RESIDENTIEL/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1127"
+  },
+  {
+    "num_ligne": 245,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "HOTEL/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1120"
+  },
+  {
+    "num_ligne": 246,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "INDUSTRIE/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1109"
+  },
+  {
+    "num_ligne": 247,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "ONG/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1126"
+  },
+  {
+    "num_ligne": 248,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1130"
+  },
+  {
+    "num_ligne": 249,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "PME/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1113"
+  },
+  {
+    "num_ligne": 250,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "POSTE MT/HT/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1128"
+  },
+  {
+    "num_ligne": 251,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1125"
+  },
+  {
+    "num_ligne": 252,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1103"
+  },
+  {
+    "num_ligne": 253,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CS/ DEPLACEMENT CABLE",
+    "type_doc_tex": 202,
+    "keyrow": "42$522$1102"
+  },
+  {
+    "num_ligne": 254,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "BOULANGERIE/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1114"
+  },
+  {
+    "num_ligne": 255,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "CHANTIER/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1107"
+  },
+  {
+    "num_ligne": 256,
+    "type_client": 42,
+    "categ_client": 1129,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "CLINIQUE/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1129"
+  },
+  {
+    "num_ligne": 257,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "COMMERCE/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1105"
+  },
+  {
+    "num_ligne": 258,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "ECLAIRAGE PUBLIC/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1116"
+  },
+  {
+    "num_ligne": 259,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "ECOLE/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1122"
+  },
+  {
+    "num_ligne": 260,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1112"
+  },
+  {
+    "num_ligne": 261,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "GENERAL/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1115"
+  },
+  {
+    "num_ligne": 262,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "HAUT RESIDENTIEL/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1127"
+  },
+  {
+    "num_ligne": 264,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "INDUSTRIE/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1109"
+  },
+  {
+    "num_ligne": 265,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "ONG/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1126"
+  },
+  {
+    "num_ligne": 266,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1130"
+  },
+  {
+    "num_ligne": 267,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "PME/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1113"
+  },
+  {
+    "num_ligne": 268,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "POSTE MT/HT/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1128"
+  },
+  {
+    "num_ligne": 269,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1125"
+  },
+  {
+    "num_ligne": 270,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1103"
+  },
+  {
+    "num_ligne": 271,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CS/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1102"
+  },
+  {
+    "num_ligne": 272,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "BOULANGERIE/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1114"
+  },
+  {
+    "num_ligne": 273,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "CHANTIER/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1107"
+  },
+  {
+    "num_ligne": 275,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "COMMERCE/ REPOSE COMPTEUR",
+    "type_doc_tex": "109,110,104,107,108,105",
+    "keyrow": "42$515$1105"
+  },
+  {
+    "num_ligne": 276,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "ECLAIRAGE PUBLIC/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1116"
+  },
+  {
+    "num_ligne": 277,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "ECOLE/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1122"
+  },
+  {
+    "num_ligne": 278,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1112"
+  },
+  {
+    "num_ligne": 279,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "GENERAL/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1115"
+  },
+  {
+    "num_ligne": 281,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "HOTEL/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1120"
+  },
+  {
+    "num_ligne": 282,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "INDUSTRIE/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1109"
+  },
+  {
+    "num_ligne": 283,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "ONG/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1126"
+  },
+  {
+    "num_ligne": 284,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1130"
+  },
+  {
+    "num_ligne": 285,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "PME/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1113"
+  },
+  {
+    "num_ligne": 286,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "POSTE MT/HT/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1128"
+  },
+  {
+    "num_ligne": 287,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1125"
+  },
+  {
+    "num_ligne": 288,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1103"
+  },
+  {
+    "num_ligne": 289,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CS/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1102"
+  },
+  {
+    "num_ligne": 290,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "BOULANGERIE/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1114"
+  },
+  {
+    "num_ligne": 291,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "CHANTIER/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1107"
+  },
+  {
+    "num_ligne": 292,
+    "type_client": 42,
+    "categ_client": 1129,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "CLINIQUE/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1129"
+  },
+  {
+    "num_ligne": 293,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "COMMERCE/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1105"
+  },
+  {
+    "num_ligne": 295,
+    "type_client": 42,
+    "categ_client": 1122,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "ECOLE/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1122"
+  },
+  {
+    "num_ligne": 296,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1112"
+  },
+  {
+    "num_ligne": 297,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "GENERAL/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1115"
+  },
+  {
+    "num_ligne": 298,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "HAUT RESIDENTIEL/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1127"
+  },
+  {
+    "num_ligne": 299,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "HOTEL/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1120"
+  },
+  {
+    "num_ligne": 300,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "INDUSTRIE/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1109"
+  },
+  {
+    "num_ligne": 301,
+    "type_client": 42,
+    "categ_client": 1126,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "ONG/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1126"
+  },
+  {
+    "num_ligne": 302,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1130"
+  },
+  {
+    "num_ligne": 303,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "PME/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1113"
+  },
+  {
+    "num_ligne": 304,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "POSTE MT/HT/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1128"
+  },
+  {
+    "num_ligne": 305,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1125"
+  },
+  {
+    "num_ligne": 306,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1103"
+  },
+  {
+    "num_ligne": 307,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CS/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1102"
+  },
+  {
+    "num_ligne": 200,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "BOULANGERIE/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1114"
+  },
+  {
+    "num_ligne": 201,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "CHANTIER/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1107"
+  },
+  {
+    "num_ligne": 58,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT CS RESIDENCE SOCIALE",
+    "type_doc_tex": "100,101,202,104,325,326",
+    "keyrow": "42$1512$1102"
+  },
+  {
+    "num_ligne": 38,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1512,
+    "type_logement": 1201,
+    "modele": "ABONNEMENT LGMT DUR/ COMMERCIAL",
+    "type_doc_tex": "124,129,204",
+    "keyrow": "41$1512$1110"
+  },
+  {
+    "num_ligne": 39,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1512,
+    "type_logement": 1202,
+    "modele": "ABONNEMENT LGMT SEMI DUR/ COMMERCIAL",
+    "type_doc_tex": "124,129,204",
+    "keyrow": "41$1512$1110"
+  },
+  {
+    "num_ligne": 40,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT CS GENERAL",
+    "type_doc_tex": "105,202,104",
+    "keyrow": "42$1501$1115"
+  },
+  {
+    "num_ligne": 328,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 523,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ DEPL.PYLONE",
+    "type_doc_tex": 202,
+    "keyrow": "41$523$1110"
+  },
+  {
+    "num_ligne": 329,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ DEPL.COMPTAGE (COURRIER)",
+    "type_doc_tex": 202,
+    "keyrow": "41$519$1110"
+  },
+  {
+    "num_ligne": 326,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 523,
+    "type_logement": 0,
+    "modele": "DOM CC/ DEPL.PYLONE",
+    "type_doc_tex": 202,
+    "keyrow": "41$523$1101"
+  },
+  {
+    "num_ligne": 327,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "DOM CC/ DEPL.COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "41$519$1101"
+  },
+  {
+    "num_ligne": 315,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ DEPL.COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1103"
+  },
+  {
+    "num_ligne": 314,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABONNEMENT/ SOCIAL/ REGION",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1106"
+  },
+  {
+    "num_ligne": 52,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT PAIN POPULAIRE",
+    "type_doc_tex": 213,
+    "keyrow": "42$1512$1114"
+  },
+  {
+    "num_ligne": 324,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "COMMERCE/ DEPL.COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1105"
+  },
+  {
+    "num_ligne": 60,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT CS COMMERCIAL",
+    "type_doc_tex": "129,202,204",
+    "keyrow": "42$1512$1105"
+  },
+  {
+    "num_ligne": 336,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 525,
+    "type_logement": 0,
+    "modele": "FINANCES NATIONALES/ VENTE MATERIELS",
+    "type_doc_tex": 202,
+    "keyrow": "42$525$1112"
+  },
+  {
+    "num_ligne": 335,
+    "type_client": 42,
+    "categ_client": 1125,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "REPRESENTATION GOUV/ ABONNEMENT",
+    "type_doc_tex": "204,202",
+    "keyrow": "42$1512$1125"
+  },
+  {
+    "num_ligne": 31,
+    "type_client": 42,
+    "categ_client": 1114,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT PAIN POPULAIRE",
+    "type_doc_tex": "213,104",
+    "keyrow": "42$1501$1114"
+  },
+  {
+    "num_ligne": 323,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "AUGMENTATION PS/ AGENT EDD",
+    "type_doc_tex": 202,
+    "keyrow": "42$520$1115"
+  },
+  {
+    "num_ligne": 95,
+    "type_client": 42,
+    "categ_client": 1128,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRANCHEMENT MT/HT",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$1501$1128"
+  },
+  {
+    "num_ligne": 116,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "REPOSE COMPTEUR /ADM PUBLIC",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$515$1115"
+  },
+  {
+    "num_ligne": 80,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1512,
+    "type_logement": 1201,
+    "modele": "PERSONNE MORALE/ GENERALE",
+    "type_doc_tex": "129,204",
+    "keyrow": "41$1512$1110"
+  },
+  {
+    "num_ligne": 337,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ DEPL.COMPTAGE",
+    "type_doc_tex": "100,101,325,326",
+    "keyrow": "41$519$1110"
+  },
+  {
+    "num_ligne": 56,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT PRISE EN CHARGE FINANCE",
+    "type_doc_tex": "144,204",
+    "keyrow": "42$1512$1112"
+  },
+  {
+    "num_ligne": 57,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABNT CS RESIDENCE DOMESTIQUE",
+    "type_doc_tex": "202,204",
+    "keyrow": "42$1512$1103"
+  },
+  {
+    "num_ligne": 331,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CC/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "41$520$1101"
+  },
+  {
+    "num_ligne": 341,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 522,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ DEPLACEMENT CABLE",
+    "type_doc_tex": "100,101,200,325,326",
+    "keyrow": "41$522$1110"
+  },
+  {
+    "num_ligne": 332,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL SOCIAL CC/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "41$520$1106"
+  },
+  {
+    "num_ligne": 339,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "CHANTIER/ DEPL. COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1107"
+  },
+  {
+    "num_ligne": 92,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN DALLE",
+    "type_doc_tex": "104,105,109,110,214,215",
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 4,
+    "type_client": 42,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/DOM CS",
+    "type_doc_tex": "100,101,105,107,108,109,110,200,104,325,326",
+    "keyrow": "42$1501$1106"
+  },
+  {
+    "num_ligne": 93,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "REPOSE COMPTEUR SUITE INCENDIE / EN BOIS",
+    "type_doc_tex": "105,219,147,104",
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 334,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "FINANCE NATIONAL/ DEPLACEMENT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1112"
+  },
+  {
+    "num_ligne": 325,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "GENERAL/ DEPLACEMENT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1115"
+  },
+  {
+    "num_ligne": 333,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "COURRIER BT CS AVEC PERMIS",
+    "type_doc_tex": "104,105,202,104,140,139,109,110,214,215",
+    "keyrow": "42$1501$1103"
+  },
+  {
+    "num_ligne": 111,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "ADMINISTRATION PUBLIQUE",
+    "type_doc_tex": "104,105,202,141",
+    "keyrow": "42$1501$1115"
+  },
+  {
+    "num_ligne": 308,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN PLANCHE",
+    "type_doc_tex": "104,105,147,137",
+    "keyrow": "41$515$1101"
+  },
+  {
+    "num_ligne": 404,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. ENFANT/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,115,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 114,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "AUGMENTATION PS/ ADM PUBLIC",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$520$1115"
+  },
+  {
+    "num_ligne": 338,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 524,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ CHANGEMENT COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "41$524$1110"
+  },
+  {
+    "num_ligne": 51,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRCHT NEUF ECLAIRAGE PUBLIC",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$1501$1116"
+  },
+  {
+    "num_ligne": 65,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRCHT CS CHANTIER SCT EXISTANT",
+    "type_doc_tex": "202,104",
+    "keyrow": "42$1501$1107"
+  },
+  {
+    "num_ligne": 340,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 520,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ AUGMENTATION PS",
+    "type_doc_tex": 202,
+    "keyrow": "41$520$1110"
+  },
+  {
+    "num_ligne": 72,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOGEMENT EN BOIS / ACCORD CESSION AMIABLE DU FDH",
+    "type_doc_tex": "100,101,104,105,112,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 68,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOGEMENT EN BOIS/SUCCESSION - ENFANTS",
+    "type_doc_tex": "100,101,104,105,115,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 67,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR- EINGUELA 2/ DOM",
+    "type_doc_tex": "100,101,104,105,137,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 37,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1512,
+    "type_logement": 1203,
+    "modele": "ABONNEMENT LGMT BOIS/ SOCIAL",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1106"
+  },
+  {
+    "num_ligne": 321,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "SOCIAL/SUCCESSION ENFANT/REGION",
+    "type_doc_tex": "100,101,104,115,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 36,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1512,
+    "type_logement": 1202,
+    "modele": "ABONNEMENT LGMT SEMI DUR/ SOCIAL",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1106"
+  },
+  {
+    "num_ligne": 35,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 1203,
+    "modele": "ABONNEMENT LGMT BOIS/DOMESTIQUE",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 33,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1512,
+    "type_logement": 1201,
+    "modele": "ABONNEMENT LGMT DUR/ SOCIAL",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1106"
+  },
+  {
+    "num_ligne": 32,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 1201,
+    "modele": "ABONNEMENT LGMT DUR/DOMESTIQUE",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 8,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1202,
+    "modele": "LOGEMENT EN SEMI DUR/SOCIAL",
+    "type_doc_tex": "100,101,104,105,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 76,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT SOCIAL-ARHIBA",
+    "type_doc_tex": "100,101,104,105,107,108,216,217,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 14,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT CS CHANTIER",
+    "type_doc_tex": "100,101,109,110,139,140,202,205,211,214,215,104,325,326",
+    "keyrow": "42$1501$1107"
+  },
+  {
+    "num_ligne": 355,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRCHT CS CHANTIER ECLAIRAGE",
+    "type_doc_tex": "202,104,100,101,325,326",
+    "keyrow": "42$1501$1107"
+  },
+  {
+    "num_ligne": 403,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/CAS CLASSIQUE/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 17,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT INDUSTRIEL",
+    "type_doc_tex": "202,129,105,104",
+    "keyrow": "42$1501$1109"
+  },
+  {
+    "num_ligne": 402,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. EPOUX(SE)/AVEC T.O.P.",
+    "type_doc_tex": "100,101,104,105,114,115,141,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 401,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. ENFANT/AVEC T.O.P.",
+    "type_doc_tex": "100,101,104,105,115,141,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 27,
+    "type_client": 42,
+    "categ_client": 1105,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT COMMERCE PRIVE",
+    "type_doc_tex": "104,105,107,108,109,110,129,202",
+    "keyrow": "42$1501$1105"
+  },
+  {
+    "num_ligne": 29,
+    "type_client": 42,
+    "categ_client": 1112,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/ PRISE EN CHARGE",
+    "type_doc_tex": "144,104",
+    "keyrow": "42$1501$1112"
+  },
+  {
+    "num_ligne": 30,
+    "type_client": 42,
+    "categ_client": 1113,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT PME",
+    "type_doc_tex": "104,105,129,202",
+    "keyrow": "42$1501$1113"
+  },
+  {
+    "num_ligne": 384,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "GENERAL CC/ REPOSE COMPTEUR SUITE INCENDIE",
+    "type_doc_tex": "218,104,105",
+    "keyrow": "41$515$1110"
+  },
+  {
+    "num_ligne": 381,
+    "type_client": 42,
+    "categ_client": 1115,
+    "type_intervention": 523,
+    "type_logement": 0,
+    "modele": "GENERAL/ DEPL. RESEAU PYLONE",
+    "type_doc_tex": 204,
+    "keyrow": "42$523$1115"
+  },
+  {
+    "num_ligne": 86,
+    "type_client": 41,
+    "categ_client": 1105,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN DALLE",
+    "type_doc_tex": "104,105,107,108,109,110,214,215",
+    "keyrow": "41$515$1105"
+  },
+  {
+    "num_ligne": 0,
+    "type_client": "NULL",
+    "categ_client": "NULL",
+    "type_intervention": "NULL",
+    "type_logement": 0,
+    "modele": "NULL",
+    "type_doc_tex": "NULL",
+    "keyrow": "$$"
+  },
+  {
+    "num_ligne": 359,
+    "type_client": 42,
+    "categ_client": 1130,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "PHARMACIE/ DEPL. COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1130"
+  },
+  {
+    "num_ligne": 383,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ REPOSE COMPTEUR (DOM)",
+    "type_doc_tex": "104,105,107,108,109,110,214,215",
+    "keyrow": "42$515$1103"
+  },
+  {
+    "num_ligne": 84,
+    "type_client": 41,
+    "categ_client": 1105,
+    "type_intervention": 515,
+    "type_logement": 1201,
+    "modele": "REPOSE COMPTEUR POUR CONSTRUCTION AVEC TOIT EN PLANCHE",
+    "type_doc_tex": "104,105,147",
+    "keyrow": "41$515$1105"
+  },
+  {
+    "num_ligne": 400,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 528,
+    "type_logement": 0,
+    "modele": "ECL.PUBLIC / DEVIS EXCEPTIONNEL",
+    "type_doc_tex": 221,
+    "keyrow": "42$528$1116"
+  },
+  {
+    "num_ligne": 343,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABON. DOM CC/ SUITE LICENCIEMENT",
+    "type_doc_tex": 310,
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 344,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABON. DOM CC/ SUITE PLAINTE",
+    "type_doc_tex": 311,
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 263,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 514,
+    "type_logement": 0,
+    "modele": "HOTEL/ DEPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$514$1120"
+  },
+  {
+    "num_ligne": 274,
+    "type_client": 42,
+    "categ_client": 1129,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "CLINIQUE/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1129"
+  },
+  {
+    "num_ligne": 280,
+    "type_client": 42,
+    "categ_client": 1127,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "HAUT RESIDENTIEL/ REPOSE COMPTEUR",
+    "type_doc_tex": 202,
+    "keyrow": "42$515$1127"
+  },
+  {
+    "num_ligne": 294,
+    "type_client": 42,
+    "categ_client": 1116,
+    "type_intervention": 516,
+    "type_logement": 0,
+    "modele": "ECLAIRAGE PUBLIC/ MODIF PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$516$1116"
+  },
+  {
+    "num_ligne": 64,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "COURRIER BT CS",
+    "type_doc_tex": "105,139,140,202,104",
+    "keyrow": "42$1501$1103"
+  },
+  {
+    "num_ligne": 94,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 515,
+    "type_logement": 0,
+    "modele": "REPOSE COMPTEUR SUITE INCENDIE / EN DUR",
+    "type_doc_tex": "104,105,219,218,109,110,214,215",
+    "keyrow": "41$515$1106"
+  },
+  {
+    "num_ligne": 16,
+    "type_client": 42,
+    "categ_client": 1109,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "BRCHT NEUF MOYENNE TENSION",
+    "type_doc_tex": "105,107,108,202,104",
+    "keyrow": "42$1501$1109"
+  },
+  {
+    "num_ligne": 351,
+    "type_client": 42,
+    "categ_client": 1103,
+    "type_intervention": 521,
+    "type_logement": 0,
+    "modele": "RESIDENTIEL DOM CS/ DIMINUTION PS",
+    "type_doc_tex": 202,
+    "keyrow": "42$521$1103"
+  },
+  {
+    "num_ligne": 356,
+    "type_client": 42,
+    "categ_client": 1120,
+    "type_intervention": 519,
+    "type_logement": 0,
+    "modele": "HOTEL/ DEPL.COMPTAGE",
+    "type_doc_tex": 202,
+    "keyrow": "42$519$1120"
+  },
+  {
+    "num_ligne": 319,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOGEMENT EN DUR/SUCCESSION-ENFANT/REGION",
+    "type_doc_tex": "100,101,104,115,147,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 361,
+    "type_client": 42,
+    "categ_client": 1107,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRCHT CS CHANTIER/PERS. MORALE (CONVENTION)",
+    "type_doc_tex": "202,317,104",
+    "keyrow": "42$1501$1107"
+  },
+  {
+    "num_ligne": 81,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1512,
+    "type_logement": 1201,
+    "modele": "PERSONNE PHYSIQUE/ GENERALE",
+    "type_doc_tex": "100,101,129,204,205,325,326",
+    "keyrow": "41$1512$1110"
+  },
+  {
+    "num_ligne": 23,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1205,
+    "modele": "LOGEMENT EN DUR AVEC CONTRAT DE LOGEMENT/ SOCIAL",
+    "type_doc_tex": "100,101,104,137,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 70,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/SUCCESSION -ENFANTS",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,115,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 71,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/SUCCESSION -EPOUSE",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,114,115,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 69,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOGEMENT EN BOIS/SUCCESSION-EPOUSE",
+    "type_doc_tex": "100,101,104,105,114,115,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 50,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR- EINGUELA 1/ DOM",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,137,139,140,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 34,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 1202,
+    "modele": "ABONNEMENT LGMT SEMI DUR/DOMESTIQUE",
+    "type_doc_tex": "100,101,200,204,205,206,325,326",
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 21,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1204,
+    "modele": "LOGEMENT EN DUR AVEC DEROGATION/ SOCIAL",
+    "type_doc_tex": "100,101,104,105,136,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 399,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/CAS CLASSIQUE/AVEC T.O.P",
+    "type_doc_tex": "100,101,104,141,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 398,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOTISSEMENT SOCIAL - PED (PARTICULIER REGION)",
+    "type_doc_tex": "100,101,104,147,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 395,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1512,
+    "type_logement": 0,
+    "modele": "ABONNEMENT LGMT DUR/DOMESTIQUE/FFDJ",
+    "type_doc_tex": "100,101,200,204,318,319,325,326",
+    "keyrow": "41$1512$1101"
+  },
+  {
+    "num_ligne": 391,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/CAS CLASSIQUE/AVEC T.O.P.",
+    "type_doc_tex": "100,101,104,105,141,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 393,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. EPOUX(SE)/AVEC T.O.P.",
+    "type_doc_tex": "100,101,104,105,114,115,141,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 392,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. ENFANT/AVEC T.O.P.",
+    "type_doc_tex": "100,101,104,105,115,141,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 389,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. EPOUX(SE)/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,114,115,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 388,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/SUCC. ENFANT/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,115,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 387,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/CAS CLASSIQUE/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 385,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOTISSEMENT SOCIAL - PED  (PARTICULIER)",
+    "type_doc_tex": "100,101,104,105,200,202,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 347,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOTISSEMENT GENERAL/SUCCESSION - EPOUSE",
+    "type_doc_tex": "100,101,104,105,114,115,200,312,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 320,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "SOCIAL/SUCCESSION EPOUSE/REGION",
+    "type_doc_tex": "100,101,104,114,115,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 317,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOGEMENT EN DUR /DOM /REGION",
+    "type_doc_tex": "100,101,104,147,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 312,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "LOGEMENT EN BOIS/ SOCIAL/ REGION",
+    "type_doc_tex": "100,101,104,141,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 79,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "BRANCHEMENT POUR MARCHE COMMUN",
+    "type_doc_tex": "100,101,104,105,200,301,325,326",
+    "keyrow": "41$1501$1110"
+  },
+  {
+    "num_ligne": 77,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "SOCIETE",
+    "type_doc_tex": "100,101,104,109,110,124,202,325,326",
+    "keyrow": "41$1501$1110"
+  },
+  {
+    "num_ligne": 75,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR - CITE GN/GR",
+    "type_doc_tex": "100,101,104,105,112,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 74,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR - CITE GN/GR",
+    "type_doc_tex": "100,101,104,105,112,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 73,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR / ACCORD CESSION AMIABLE DU FDH",
+    "type_doc_tex": "100,101,104,105,109,110,112,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 28,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1206,
+    "modele": "LOGEMENT DE TYPE BATIMENT/ DOMESTIQUE",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,139,140,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 22,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1205,
+    "modele": "LOGEMENT EN DUR AVEC CONTRAT DE LOGEMENT/ DOMESTIQUE",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,137,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 20,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1204,
+    "modele": "LOGEMENT EN SEMI-DUR AVEC DEROGATION/ DOMESTIQUE",
+    "type_doc_tex": "100,101,104,105,136,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 19,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/ SOCIAL",
+    "type_doc_tex": "100,101,104,105,109,110,200,214,215,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 13,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOGEMENT EN BOIS/COMMERCIAL",
+    "type_doc_tex": "100,101,104,105,147,200,325,326",
+    "keyrow": "41$1501$1110"
+  },
+  {
+    "num_ligne": 12,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1501,
+    "type_logement": 1202,
+    "modele": "LOGEMENT EN SEMI DUR/COMMERCIAL",
+    "type_doc_tex": "100,101,104,107,108,109,110,325,326",
+    "keyrow": "41$1501$1110"
+  },
+  {
+    "num_ligne": 11,
+    "type_client": 41,
+    "categ_client": 1110,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/COMMERCIAL",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,200,325,326",
+    "keyrow": "41$1501$1110"
+  },
+  {
+    "num_ligne": 10,
+    "type_client": 41,
+    "categ_client": 1106,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOGEMENT EN BOIS/SOCIAL",
+    "type_doc_tex": "100,101,104,105,147,200,325,326",
+    "keyrow": "41$1501$1106"
+  },
+  {
+    "num_ligne": 9,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1203,
+    "modele": "LOGEMENT EN BOIS/DOMESTIQUE",
+    "type_doc_tex": "100,101,104,105,147,200,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 3,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/SOCIAL CS",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,200,323,325,326",
+    "keyrow": "42$1501$1102"
+  },
+  {
+    "num_ligne": 2,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1202,
+    "modele": "LOGEMENT EN SEMI DUR/DOMESTIQUE",
+    "type_doc_tex": "100,101,104,105,109,110,111,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 1,
+    "type_client": 41,
+    "categ_client": 1101,
+    "type_intervention": 1501,
+    "type_logement": 1201,
+    "modele": "LOGEMENT EN DUR/DOMESTIQUE",
+    "type_doc_tex": "100,101,104,105,107,108,109,110,200,214,215,325,326",
+    "keyrow": "41$1501$1101"
+  },
+  {
+    "num_ligne": 390,
+    "type_client": 42,
+    "categ_client": 1102,
+    "type_intervention": 1501,
+    "type_logement": 0,
+    "modele": "AFFAIRE SOCIALE/PROCURATION/SANS T.O.P.",
+    "type_doc_tex": "100,101,104,105,200,202,318,323,325,326",
+    "keyrow": "42$1501$1102"
+  }
+]

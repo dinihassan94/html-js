@@ -1,0 +1,22 @@
+[
+  {
+    "code_table": "TCLU",
+    "id_ligne": 41,
+    "lib_court": "CC",
+    "lib_long": "CLIENTELE COURANTE",
+    "nom_table": "TYPE CELLULE",
+    "code_ligne": 1,
+    "code_suppr": "NULL",
+    "id_parent": "NULL"
+  },
+  {
+    "code_table": "TCLU",
+    "id_ligne": 42,
+    "lib_court": "CS",
+    "lib_long": "CLIENTELE SPECIALE",
+    "nom_table": "TYPE CELLULE",
+    "code_ligne": 2,
+    "code_suppr": "NULL",
+    "id_parent": "NULL"
+  }
+]

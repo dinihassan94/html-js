@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+  <base href="/">
+  <script src="/dmxAppConnect/dmxAppConnect.js"></script>
+  <meta charset="UTF-8">
+  <title>EDD : Formulaire en ligne - Demande de Raccordement d'électricité</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/bootstrap/5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/dmxAppConnect/dmxRouting/dmxRouting.js" defer></script>
+  <script src="/dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+  <link rel="stylesheet" href="/dmxAppConnect/dmxValidator/dmxValidator.css" />
+  <script src="/dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
+  <script src="/dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer></script>
+  <script src="/dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
+  <script src="/dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+  <script src="/dmxAppConnect/dmxBootstrap5Toasts/dmxBootstrap5Toasts.js" defer></script>
+  <link rel="stylesheet" href="/dmxAppConnect/dmxAnimateCSS/animate.min.css" />
+  <script src="/dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer></script>
+  <link rel="icon" href="/assets/images/arton142.png">
+  <link rel="stylesheet" href="/dmxAppConnect/dmxBootstrap5TableGenerator/dmxBootstrap5TableGenerator.css" />
+  <script src="/dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
+  <script src="/dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.2.9/build/pdfmake.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.2.9/build/vfs_fonts.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-to-pdfmake@2.5.2/browser.min.js" defer></script>
+  <script src="/dmxAppConnect/dmxPdfCreator/dmxPdfCreator.js" defer></script>
+</head>
+
+<body is="dmx-app" id="main" dmx-style:background-color="'#F0F0F0'">
+  <script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+
+  <header class="sticky-top border-bottom border-primary-subtle shadow-sm bg-opacity-100" dmx-style:background-color="'#005eb8'">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg justify-content-start">
+            <a class="navbar-brand" href="#"><img src="/assets/images/arton142.png" class="img-fluid img-thumbnail" width="40"></a>
+            <span class="navbar-text text-white text-uppercase fw-bold" dmx-style:font-size="'18px'"><b>Formulaire en ligne</b><br></span>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div is="dmx-view" id="content">
+    <%- await include(content, locals); %>
+  </div>
+  <footer class="fixed-bottom border-top text-black bg-white border-primary-subtle shadow">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <p class="text-center small mb-0 p-1 fw-bold text-body-secondary">©&nbsp; Copyrights. All rights reserved. EDD</p>
+
+        </div>
+        <div class="col d-none d-sm-block">
+          <p class="text-center mb-0 p-1 fw-bold small text-body-secondary"><i class="fas fa-align-justify"></i>&nbsp; Designed by SI EDD</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<style>
+  /* Style for the scrollbar itself */
+  ::-webkit-scrollbar {
+    width: 5px;
+    /* Adjust the width of the vertical scrollbar */
+  }
+
+  /* Style for the track (background) of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Light grey track */
+  }
+
+  /* Style for the handle (thumb) of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Dark grey thumb */
+    border-radius: 6px;
+    /* Rounded corners for the thumb */
+  }
+
+  /* Style for the handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker shade of grey on hover */
+  }
+</style>

@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "options": {
+      "linkedFile": "/views/E-services/FicheDmd.ejs",
+      "linkedForm": "multiStepForm"
+    },
+    "$_POST": [
+      {
+        "type": "text",
+        "fieldName": "Nom",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            }
+          }
+        },
+        "name": "Nom"
+      },
+      {
+        "type": "text",
+        "fieldName": "Adresse",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            }
+          }
+        },
+        "name": "Adresse"
+      },
+      {
+        "type": "text",
+        "fieldName": "mail",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:email": {
+              "param": "",
+              "message": "- Veuillez entrer une adresse e-mail valide."
+            }
+          }
+        },
+        "name": "mail"
+      },
+      {
+        "type": "text",
+        "fieldName": "Tel",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:maxlength": {
+              "param": "8"
+            }
+          }
+        },
+        "name": "Tel"
+      },
+      {
+        "type": "text",
+        "fieldName": "Puissance",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:maxlength": {
+              "param": "4"
+            }
+          }
+        },
+        "name": "Puissance"
+      },
+      {
+        "type": "text",
+        "fieldName": "PL",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:maxlength": {
+              "param": "6"
+            }
+          }
+        },
+        "name": "PL"
+      },
+      {
+        "type": "text",
+        "fieldName": "nbr_clim",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:maxlength": {
+              "param": "2"
+            }
+          }
+        },
+        "name": "nbr_clim"
+      },
+      {
+        "type": "text",
+        "fieldName": "Nbr_eclaire",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:maxlength": {
+              "param": "2"
+            }
+          }
+        },
+        "name": "Nbr_eclaire"
+      },
+      {
+        "type": "text",
+        "fieldName": "Nbr_refrigerateur",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            },
+            "core:maxlength": {
+              "param": "2"
+            }
+          }
+        },
+        "name": "Nbr_refrigerateur"
+      },
+      {
+        "type": "text",
+        "fieldName": "GroupeClientele",
+        "name": "GroupeClientele"
+      },
+      {
+        "type": "text",
+        "fieldName": "Statut",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            }
+          }
+        },
+        "name": "Statut"
+      },
+      {
+        "type": "text",
+        "fieldName": "Usage",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            }
+          }
+        },
+        "name": "Usage"
+      },
+      {
+        "type": "text",
+        "fieldName": "Type_Logement",
+        "options": {
+          "rules": {}
+        },
+        "name": "Type_Logement"
+      },
+      {
+        "type": "text",
+        "fieldName": "Type_Intervention",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            }
+          }
+        },
+        "name": "Type_Intervention"
+      },
+      {
+        "type": "text",
+        "fieldName": "Modele_document",
+        "options": {
+          "rules": {
+            "core:required": {
+              "param": "",
+              "message": "- Ce champ est requis."
+            }
+          }
+        },
+        "name": "Modele_document"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "generate_id",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "edbdev",
+          "sql": {
+            "query": "SELECT generate_next_id() AS id;\n",
+            "params": []
+          }
+        },
+        "meta": [
+          {
+            "name": "id",
+            "type": "text"
+          }
+        ],
+        "output": false
+      },
+      {
+        "name": "generatedID",
+        "module": "core",
+        "action": "setvalue",
+        "options": {
+          "value": "{{generate_id[0].id}}",
+          "key": "generatedID"
+        },
+        "meta": [],
+        "outputType": "text",
+        "output": false
+      },
+      {
+        "name": "custom",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "edbdev",
+          "sql": {
+            "query": "INSERT INTO tsptest.demande_web(num_dmd, \nid_client, \nmail,\ntel, \nnbr_clim, \nnbr_piece, \nnbr_refrig, \nps_sht, \nps_calc,\npl_proche, \ngrp_clientel, \nstatut, \nusage, \nlieu_residence, \ntype_interv, \nmodele_doc, \ndate_dmd, \nmail_active, \nstatut_dmd, \nnom, \nadresse \n)\n\nVALUES (:P1, \n        0, \n        :P3, \n        :P4, \n        :P5, \n        :P6, \n        :P7, \n        :P8, \n        '0', \n        :P10,\n        :P11, \n        :P12, \n        :P13, \n        'N', \n        :P15, \n        :P16, \n        DATE(CURRENT_TIMESTAMP), \n        'N', \n        1701, \n        :P20, \n        :P21 \n);",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{generatedID}}",
+                "test": "3131231",
+                "recid": 1
+              },
+              {
+                "name": ":P3",
+                "value": "{{$_POST.mail}}",
+                "test": "ramadanyacin6@gmail.com",
+                "recid": 2
+              },
+              {
+                "name": ":P4",
+                "value": "{{$_POST.Tel}}",
+                "test": "77335529",
+                "recid": 3
+              },
+              {
+                "name": ":P5",
+                "value": "{{$_POST.nbr_clim}}",
+                "test": "4",
+                "recid": 4
+              },
+              {
+                "name": ":P6",
+                "value": "{{$_POST.Nbr_eclaire}}",
+                "test": "7",
+                "recid": 5
+              },
+              {
+                "name": ":P7",
+                "value": "{{$_POST.Nbr_refrigerateur}}",
+                "test": "1",
+                "recid": 6
+              },
+              {
+                "name": ":P8",
+                "value": "{{$_POST.Puissance}}",
+                "test": "3",
+                "recid": 7
+              },
+              {
+                "name": ":P10",
+                "value": "{{$_POST.PL}}",
+                "test": "070521",
+                "recid": 8
+              },
+              {
+                "name": ":P11",
+                "value": "{{$_POST.GroupeClientele}}",
+                "test": "41",
+                "recid": 9
+              },
+              {
+                "name": ":P12",
+                "value": "{{$_POST.Statut}}",
+                "test": "4",
+                "recid": 10
+              },
+              {
+                "name": ":P13",
+                "value": "{{$_POST.Usage}}",
+                "test": "1101",
+                "recid": 11
+              },
+              {
+                "name": ":P15",
+                "value": "{{$_POST.Type_Intervention}}",
+                "test": "1501",
+                "recid": 12
+              },
+              {
+                "name": ":P16",
+                "value": "{{$_POST.Modele_document}}",
+                "test": "9",
+                "recid": 13
+              },
+              {
+                "name": ":P20",
+                "value": "{{$_POST.Nom}}",
+                "test": "Ramadan Yacin Ibrahim",
+                "recid": 14
+              },
+              {
+                "name": ":P21",
+                "value": "{{$_POST.Adresse}}",
+                "test": "Cite Aquitaine",
+                "recid": 15
+              }
+            ]
+          },
+          "test": true
+        },
+        "meta": [],
+        "outputType": "array",
+        "output": true
+      },
+      {
+        "name": "",
+        "module": "mail",
+        "action": "send",
+        "options": {
+          "instance": "mail",
+          "subject": "EDD : Votre demande de Branchement-Neuf",
+          "fromEmail": "ramadan.yacin@edd-dj.com",
+          "toName": "{{$_POST.Nom}}",
+          "toEmail": "{{$_POST.mail}}",
+          "fromName": "Electricité de Djibouti",
+          "attachments": [
+            "/public/assets/images/brch.png"
+          ],
+          "contentType": "html",
+          "embedImages": true,
+          "source": "file",
+          "bodyFile": "/views/E-services/gmail.ejs"
+        }
+      }
+    ]
+  }
+}

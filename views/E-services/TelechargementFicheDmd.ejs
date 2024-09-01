@@ -1,0 +1,52 @@
+<!-- Wappler include head-page="layouts/fichedmd" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="TelechargementFicheDmd" appConnect="local" components="{dmxStateManagement:{}}" -->
+
+<dmx-query-manager id="sc_demande"></dmx-query-manager>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="card shadow-sm">
+
+                <div class="card-header text-center" dmx-style:background-color="'#005eb8'">
+                    <img src="/assets/images/arton142.png" width="60" class="img-fluid img-thumbnail">
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title text-center">Fiche en cours de téléchargement...</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<meta name="ac:route" content="/E-services/TelechargementFicheDmd">
+
+
+<div id="iframeContainer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var Num_dmd = urlParams.get('Num_dmd');
+        var iframeSrc = '/E-services/FicheDemande?Num_dmd=' + Num_dmd;
+        var $iframe = $('<iframe>', {
+            src: iframeSrc,
+            frameborder: 0,
+            scrolling: 'auto',
+            width: '1',
+            height: '1'
+        });
+        
+        // Add iframe to the container
+        $('#iframeContainer').append($iframe);
+
+
+ $iframe.on('load', function() {
+    setTimeout(function() {
+            window.close();  
+    }, 3000);
+ });
+
+
+    });
+
+
+
+</script>

@@ -1,0 +1,43 @@
+{
+  "projectName": "JsonDemandeRaccordement",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap5",
+  "frameworks": [
+    {
+      "name": "fontawesome_5",
+      "type": "cdn"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
+    }
+  ],
+  "hostingType": "wappler",
+  "projectServerModel": "node",
+  "runtime": "capacitor",
+  "webRootFolder": "/public",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "node",
+  "projectLinksType": "site",
+  "targets": [
+    {
+      "targetType": "wappler",
+      "access": "local",
+      "localFolder": "file:///C:/Users/47699/Desktop/JsonDemandeRaccordement",
+      "remoteURL": "http://localhost:3000",
+      "name": "Dev"
+    }
+  ],
+  "activeTarget": "Docker",
+  "projectType": "web",
+  "extensions": [],
+  "resources": {
+    "providers": {}
+  }
+}

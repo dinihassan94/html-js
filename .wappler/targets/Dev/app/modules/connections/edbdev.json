@@ -1,0 +1,20 @@
+{
+  "name": "edbdev",
+  "module": "dbconnector",
+  "action": "connect",
+  "options": {
+    "client": "postgres",
+    "connection": {
+      "host": "192.168.8.50",
+      "port": 5444,
+      "user": "tspuser",
+      "password": "tspuser",
+      "database": "edbdev"
+    },
+    "tz": "utc",
+    "meta": {}
+  },
+  "fileName": "edbdev.json",
+  "actionFilePath": "file:///C:/Users/47699/Desktop/JsonDemandeRaccordement/app/modules/connections/edbdev.json",
+  "serverType": "node"
+}

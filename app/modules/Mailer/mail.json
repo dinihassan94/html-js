@@ -1,0 +1,12 @@
+{
+  "name": "mail",
+  "module": "mail",
+  "action": "setup",
+  "options": {
+    "host": "smtp.gmail.com",
+    "port": 465,
+    "username": "ramadan.yacin@edd-dj.com",
+    "useSSL": true,
+    "password": "xedc vdck terh drhl"
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id_ligne": 1206,
+    "lib_long": "LOGEMENT DE TYPE BATIMENT"
+  },
+  {
+    "id_ligne": 1205,
+    "lib_long": "LOGEMENT EN DUR AVEC CONTRAT DE LOGEMENT"
+  },
+  {
+    "id_ligne": 1204,
+    "lib_long": "LOGEMENT EN DUR AVEC DEROGATION"
+  },
+  {
+    "id_ligne": 1203,
+    "lib_long": "LOGEMENT EN BOIS"
+  },
+  {
+    "id_ligne": 1202,
+    "lib_long": "LOGEMENT EN SEMI DUR"
+  },
+  {
+    "id_ligne": 1201,
+    "lib_long": "LOGEMENT EN DUR"
+  }
+]

@@ -1,0 +1,559 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" id="FicheDmd" components="{dmxValidator:{},dmxStateManagement:{},dmxFormatter:{},dmxDataTraversal:{},dmxBootstrap5Toasts:{},dmxAnimateCSS:{},dmxBootstrap5TableGenerator:{},dmxBootstrap5Modal:{},dmxBrowser:{},dmxPdfCreator:{}}" is="dmx-app" appconnect="local" jquery_33="local" -->
+<div class="modal fade" id="infos" is="dmx-bs5-modal" tabindex="-1" show="true" nocloseonclick="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header pt-2 pb-2" dmx-style:background-color="'#005eb8'">
+
+
+                <img src="/assets/images/arton142.png" width="45" class="img-fluid img-thumbnail shadow-sm">
+                <h5 class="modal-title fw-bold text-white">&nbsp; EDD-<span style="">Notification</span></h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <img class="card-img-top img-fluid shadow-sm img-thumbnail" src="/assets/images/maison.jpg">
+                        <p class="card-text mt-3 pt-2 pb-2 ps-2 pe-2 bg-opacity-50 lh-sm text-black"><b>NB: </b><span>Effectuez votre demande de branchement après la fin de la construction et de la finition de votre habitation.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn1" class="btn btn-sm fw-bold text-white" dmx-on:click="infos.hide()" dmx-style:background-color="'#005eb8'"><i class="fas fa-check-double">&nbsp;&nbsp;</i>J'ai compris</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal1" is="dmx-bs5-modal" tabindex="-1" nocloseonclick="true" nokeyboard="true" nofocus="true" dmx-bind:show="multiStepForm.state.executing">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="spinner-border spinner-border-sm" role="status" dmx-style:color="'#005eb8'">
+                </div>
+                <h6 class="text-center" dmx-style:color="'#005eb8'">En cours d'envoi...</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<dmx-data-view id="Modele_doc_affich_dv" dmx-bind:data="Modele_doc_affich.data" filter="num_ligne==multiStepForm.select8.value"></dmx-data-view>
+<dmx-json-datasource id="Modele_doc_affich" is="dmx-serverconnect" url="/JsonData/Model_doc_affichage.json" noload="true"></dmx-json-datasource>
+<dmx-json-datasource id="GroupeClientele" is="dmx-serverconnect" url="/JsonData/GroupeClientele.json"></dmx-json-datasource>
+<dmx-array id="Model_doc_array" dmx-bind:items="Model_doc_DV.data"></dmx-array>
+<dmx-data-view id="Model_doc_DV" dmx-bind:data="Modele_doc.data" filter="keyrow==multiStepForm.select1.value+'$'+multiStepForm.select7.value+'$'+multiStepForm.select3.value"></dmx-data-view>
+
+
+<dmx-json-datasource id="Modele_doc" is="dmx-serverconnect" url="/JsonData/Modele_doc.json" noload="true"></dmx-json-datasource>
+<dmx-json-datasource id="TypeIntervention" is="dmx-serverconnect" url="/JsonData/TypeIntervention.json"></dmx-json-datasource>
+<dmx-json-datasource id="TypeLogement" is="dmx-serverconnect" url="/JsonData/TypeLogement.json"></dmx-json-datasource>
+<dmx-array id="UsageArray" dmx-bind:items="Usage.data"></dmx-array>
+<dmx-json-datasource id="Usage" is="dmx-serverconnect" url="/JsonData/Usage.json"></dmx-json-datasource>
+<dmx-array id="StatutArray" dmx-bind:items="Statut.data"></dmx-array>
+<dmx-json-datasource id="Statut" is="dmx-serverconnect" url="/JsonData/Statut.json"></dmx-json-datasource>
+<div is="dmx-browser" id="reload"></div>
+
+
+
+
+<div class="modal fade" id="ModalDemandeEffectuer" is="dmx-bs5-modal" tabindex="-1" nocloseonclick="true" dmx-on:hide-bs-modal="reload.reload()">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center bg-opacity-75 shadow-sm">
+
+
+
+            </div>
+            <div class="modal-body">
+
+
+
+                <style>
+                    .thank-you-pop {
+                        width: 100%;
+                        padding: 20px;
+                        text-align: center;
+                    }
+
+                    .thank-you-pop img {
+                        width: 76px;
+                        height: auto;
+                        margin: 0 auto;
+                        display: block;
+                        margin-bottom: 25px;
+                    }
+
+                    .thank-you-pop h1 {
+                        font-size: 42px;
+                        margin-bottom: 25px;
+                        color: #5C5C5C;
+                    }
+
+                    .thank-you-pop p {
+                        font-size: 20px;
+                        margin-bottom: 27px;
+                        color: #5C5C5C;
+                    }
+
+                    .thank-you-pop h4.cupon-pop {
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                        color: #222;
+                        display: inline-block;
+                        text-align: center;
+                        padding: 10px 20px;
+                        border: 2px dashed #222;
+                        clear: both;
+                        font-weight: normal;
+                    }
+
+                    .thank-you-pop h4.cupon-pop span {
+                        color: #03A9F4;
+                    }
+
+                    .thank-you-pop a {
+                        display: inline-block;
+                        margin: 0 auto;
+                        padding: 9px 20px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        background-color: #8BC34A;
+                        border-radius: 17px;
+                    }
+
+                    .thank-you-pop a i {
+                        margin-right: 5px;
+                        color: #fff;
+                    }
+                </style>
+
+
+                <div class="thank-you-pop">
+                    <img src="/assets/images/arton142.png" alt="" class="img-fluid img-thumbnail shadow-sm mb-1">
+                    <h6 class="fw-bold text-primary text-uppercase">Électricité DE DJIBOUTI</h6>
+                    <h1 class="initialism mt-3 shadow-sm text-white" dmx-style:background-color="'#005eb8'">Merci !</h1>
+                    <p class="text-body-emphasis"><i class="fas fa-check">&nbsp;&nbsp;</i>Votre demande a été bien enregistrée.
+                    <h6 style=" text-align: center; " class="text-black-50">Vous avez reçu un e-mail de validation dans votre boîte de réception. Veuillez cliquer sur le lien reçu pour pouvoir imprimer votre <b>demande de branchement</b><span>.</span></h6>
+                    </p>
+                    <h4 class="cupon-pop">Demandeur : <span>{{multiStepForm.input1.value}}</span></h4>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer shadow-sm">
+                <button type="button" class="btn btn-sm fw-bold btn-outline-danger" data-bs-dismiss="modal" dmx-on:click="reload.reload()"><i class="fas fa-window-close">&nbsp;&nbsp;</i>Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--<dmx-serverconnect id="GroupeClientele" url="/api/GroupeClientele"></dmx-serverconnect>-->
+<meta name="ac:route" content="/index">
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form and Image Cards</title>
+</head>
+
+<body>
+
+
+    <div class="container pt-3 pb-4">
+
+        <div class="row ps-2 pe-2">
+            <div class="col border mb-2 rounded bg-white shadow-sm">
+                <h5 class="text-center lh-1 mt-2 text-uppercase fw-bold" dmx-style:color="'#005eb8'"><b><i class="fas fa-folder-open">&nbsp;&nbsp;</i>Demande de Raccordement d'électricité</b></h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-4 col-md-4">
+                <div class="card h-100 shadow-sm">
+
+
+                    <div class="card-header shadow-sm bg-opacity-75" dmx-style:background-color="'#005eb8'">
+                        <h5 class="mt-1 text-center fw-bold text-white"><i class="fas fa-step-forward">&nbsp;&nbsp;</i><span id="stepIndicator">Etape 1 sur 3</span></h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <form id="multiStepForm" method="post" is="dmx-serverconnect-form" action="/api/Enregistrement/InsertionDemandeWeb" dmx-on:success="ModalDemandeEffectuer.show()">
+
+
+                                    <div id="step1" class="form-step">
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group md-3 small">
+                                                    <label for="input1" class="form-label col-form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Groupe clientèle <b>*</b> :</label><select id="select1" class="form-select form-select-sm" dmx-bind:options="GroupeClientele.data" optiontext="lib_long" dmx-on:changed="Statut.load();Usage.load({});Modele_doc_affich.reset()" optionvalue="id_ligne" name="GroupeClientele">
+
+                                                        <option value="">--- Votre choix ---</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group md-3 small mt-2">
+                                                    <label for="input1" class="form-label col-form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Statut&nbsp;<b>*</b> :</label><select id="select2" class="form-select form-select-sm" optiontext="lib_long" optionvalue="id_ligne" dmx-bind:options="StatutArray.items.where(`id_parent`, select1.value, '==')" required="" data-msg-required="- Ce champ est requis." name="Statut">
+
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group md-3 small mt-2">
+                                                    <label for="input1" class="form-label col-form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Usage <b>*</b> :</label><select id="select3" class="form-select form-select-sm" dmx-bind:options="UsageArray.items.where(`id_parent`, select1.value, '==')" optiontext="lib_long" required="" data-msg-required="- Ce champ est requis." optionvalue="id_ligne" dmx-on:changed="Modele_doc_affich.reset();Modele_doc.load()" name="Usage">
+
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+
+
+                                                <div class="form-group md-3 small mt-2">
+                                                    <label for="input1" class="form-label col-form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Type logement&nbsp; <b>*</b> :</label><select id="select9" class="form-select form-select-sm" dmx-bind:options="TypeLogement.data" optiontext="lib_long" required="" data-msg-required="- Ce champ est requis." optionvalue="id_ligne" dmx-on:changed="Modele_doc_affich.reset();Modele_doc.load()" name="Type_Logement">
+
+                                                        <option value="0">TYPE NON DÉFINIS</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group md-3 small mt-2">
+                                                    <label for="input1" class="form-label col-form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Type d'intervention <b>*</b> :</label><select id="select7" class="form-select form-select-sm" dmx-bind:options="TypeIntervention.data" optiontext="lib_long" required="" data-msg-required="- Ce champ est requis." optionvalue="id_ligne" dmx-on:changed="Modele_doc_affich.reset();Modele_doc.load()" name="Type_Intervention">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn text-white mt-5 ps-4 pe-4 fw-bold btn-sm shadow-sm" type="button" dmx-on:click="run([{run:{outputType:'text',action:`select2.validate();select3.validate();select9.validate();select7.validate()`}},{wait:{delay:200}},{condition:{outputType:'boolean',if:`select3.invalid`,then:{steps:[{'toast.setup':{position:'bottom',delay:2000}},{'toast.show':{message:'Veuillez remplir correctement pour accéder à la page suivante',title:'&lt;span style=&quot;color: red&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-exclamation-triangle-fill&quot; viewBox=&quot;0 0 16 16&quot;&gt;  &lt;path d=&quot;M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2&quot;/&gt;&lt;/svg&gt; - Alerte&lt;/span&gt;',subtitle:'Validation',icon:'/public/assets/images/arton142.png'}}]},else:{steps:{runJS:{outputType:'text',function:'showStep',args:['2']}}}}}])" dmx-style:background-color="'#005eb8'">Suivant&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                    </div>
+
+                                    <!-- Step 2 -->
+                                    <div id="step2" class="form-step" style="display:none;">
+
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <div class="form-group md-3 small">
+                                                    <label for="input1" class="form-label col-form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Modèle document <b>*</b> :</label><select id="select8" class="form-select form-select-sm" required="" data-msg-required="- Ce champ est requis." dmx-on:changed="Modele_doc_affich.reset();Modele_doc_affich.load()" optiontext="modele" optionvalue="num_ligne" name="Modele_document" dmx-bind:options="select9.value==0?Model_doc_array.items:Model_doc_array.items.where(`type_logement`, select9.value, '==')">
+
+                                                        <option value="">--- Votre choix ---</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Your Step 2 fields -->
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-header fw-bold shadow-sm text-primary"><i class="fas fa-file-alt">&nbsp;</i> Documents requis</div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col rounded small">
+
+
+
+                                                                <table class="table table-bordered table-hover">
+                                                                    <thead>
+                                                                    </thead>
+                                                                    <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="Modele_doc_affich_dv.data" id="tableRepeat2">
+                                                                        <tr>
+                                                                            <td dmx-text="+'--> '+nom_doc" class="fw-bold text-bg-light small"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><button class="btn text-white mt-5 ms-1 ps-4 pe-4 fw-bold btn-sm shadow-sm" type="button" dmx-on:click="run([{run:{outputType:'text',action:`select8.validate()`}},{wait:{delay:200}},{condition:{outputType:'boolean',if:`select8.invalid`,then:{steps:[{'toast.setup':{position:'bottom',delay:2000}},{'toast.show':{message:'Veuillez remplir correctement pour accéder à la page suivante',title:'&lt;span style=&quot;color: red&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-exclamation-triangle-fill&quot; viewBox=&quot;0 0 16 16&quot;&gt;  &lt;path d=&quot;M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2&quot;/&gt;&lt;/svg&gt; - Alerte&lt;/span&gt;',subtitle:'Validation'}}]},else:{steps:{runJS:{outputType:'text',function:'showStep',args:['3']}}}}}])" dmx-style:background-color="'#005eb8'">Suivant&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <button class="btn bg-warning mt-5 me-1 ps-4 pe-4 fw-bold text-dark-emphasis btn-sm shadow-sm bg-opacity-75" type="button" onclick="showStep(1)"><i class="fas fa-caret-left">&nbsp;&nbsp;</i>Précédent</button>
+
+                                    </div>
+
+                                    <!-- Step 3 -->
+                                    <div id="step3" class="form-step" style="display:none;">
+
+                                        <div class="row">
+                                            <div class="col small">
+                                                <div class="form-group md-3"> <label for="input1" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Nom complet <b>*</b> :</label>
+                                                    <input type="text" class="form-control form-control-sm" id="input1" name="Nom" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis.">
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input2" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Adresse de la maison à raccorder <b>*</b> :<br></label>
+                                                    <input type="text" class="form-control form-control-sm" id="input2" name="Adresse" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis.">
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input3" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Adresse e-mail <b>*</b> :</label>
+                                                    <input type="text" class="form-control form-control-sm" id="input3" name="mail" aria-describedby="input1_help" required="" data-rule-email="" data-msg-required="- Ce champ est requis." data-msg-email="- Veuillez entrer une adresse e-mail valide.">
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input4" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Numéro téléphone <b>*</b> :</label>
+                                                    <input type="text" maxlength="8" class="form-control form-control-sm" id="input4" name="Tel" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis." oninput="validateInput(this)" value="77">
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input5" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Puissance souhaitée (<b>en KVA</b>) <b>*</b> :</label>
+
+                                                    <!--<input type="text" maxlength="4" class="form-control form-control-sm" id="input5" name="Puissance" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis." oninput="validateInput(this)">-->
+
+
+                                                    <select class="form-select form-select-sm" id="input5" name="Puissance" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis." onchange="validateInput(this)">
+                                                        <option value="">--- Votre choix ---</option>
+                                                        <option value="1">1 KVA</option>
+                                                        <option value="3">3 KVA</option>
+                                                        <option value="6">6 KVA</option>
+                                                        <option value="9">9 KVA</option>
+                                                        <option value="12">12 KVA</option>
+                                                        <option value="15">15 KVA</option>
+                                                        <option value="18">18 KVA</option>
+                                                        <option value="21">21 KVA</option>
+                                                        <option value="36">36 KVA</option>
+                                                        <option value="36"> +36 KVA</option>
+                                                    </select>
+
+
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input6" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Support de poteau
+                                                        <br>(Point de livraison, le plus proche.) <b>*</b> :<br></label>
+                                                    <input type="text" class="form-control form-control-sm" id="input6" maxlength="6" name="PL" aria-describedby="input1_help" placeholder="000000" required="" data-msg-required="- Ce champ est requis." oninput="validateInput(this)">
+                                                </div>
+
+                                                <div class="form-group md-3 mt-2"> <label class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Nombre de compteur :</label>
+                                                    <input type="text" maxlength="2" class="form-control form-control-sm" aria-describedby="input1_help" disabled="true" dmx-bind:value="1">
+                                                </div>
+
+                                                <div class="form-group md-3 mt-2"> <label for="input7" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Nombre de climatiseur <b>*</b> :</label>
+                                                    <input type="text" maxlength="2" class="form-control form-control-sm" id="input7" name="nbr_clim" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis." oninput="validateInput(this)">
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input8" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Nombre de pièce éclairée <b>*</b> :</label>
+                                                    <input type="text" maxlength="2" class="form-control form-control-sm" id="input8" name="Nbr_eclaire" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis." oninput="validateInput(this)">
+                                                </div>
+                                                <div class="form-group md-3 mt-2"> <label for="input9" class="form-label"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Nombre de réfrigérateur <b>*</b> :</label>
+                                                    <input type="text" maxlength="2" class="form-control form-control-sm" id="input9" name="Nbr_refrigerateur" aria-describedby="input1_help" required="" data-msg-required="- Ce champ est requis." oninput="validateInput(this)">
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+                                        <button class="btn mt-5 ms-1 ps-4 pe-4 fw-bold btn-sm shadow-sm text-white text-bg-success bg-opacity-75" type="submit">
+                                            <i class="fas fa-check-square">&nbsp;&nbsp;</i> Terminer</button>
+                                        <button class="btn bg-warning mt-5 me-1 ps-4 pe-4 fw-bold text-dark-emphasis btn-sm shadow-sm bg-opacity-75" type="button" onclick="showStep(2)"><i class="fas fa-caret-left">&nbsp;&nbsp;</i>Précédent</button>
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-12 mt-0">
+                                <h6 class="text-black-50 small mt-4">* Champs obligatoires.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer shadow-sm bg-opacity-75" dmx-style:background-color="'#005eb8'"></div>
+                </div>
+            </div>
+            <div class="mb-4 col-md-8">
+                <div class="card h-100 shadow-sm">
+
+
+
+
+                    <div class="card-header fw-bold text-center shadow-sm bg-opacity-75" dmx-style:background-color="'#005eb8'">
+                        <h5 class="fw-bold mt-1 text-white"><i class="fas fa-server">&nbsp;&nbsp;</i>Services en ligne d'EDD</h5>
+
+                    </div>
+                    <div class=" text-center">
+                        <h6 class="text-center fw-bolder mt-3 ms-3 me-3"><i class="fas fa-question-circle">&nbsp;&nbsp;</i>Vous souhaitez faire une demande d'un nouveau raccordement d'électricité ? <span style="font-weight: normal;">Vous êtes sur la bonne page.</span></h6>
+                    </div><a class="" href="https://www.edd.dj/particulier/residentiel/brch.png" target="_blank"><img src="/assets/images/brch.png" class="card-img-top img-fluid mt-2" alt="..."></a>
+                    <div class="card-body ps-0 pe-0">
+
+                        <h4 class="card-title text-center" dmx-style:color="'#005eb8'">Télécharger gratuitement
+                            <p>l’appli <b>Edd Mobile</b></p>
+                        </h4>
+                        <h6 class="card-text text-center text-info fw-bold opacity-50">Votre espace client portable</h6>
+
+                        <div class="row">
+                            <div class="text-center col-12"><a class="logo" target="_blank" href="https://itunes.apple.com/us/app/edd-mobile/id1459376903?l=fr&ls=1&mt=8">
+                                    <img class="img-fluid" style="   margin-left: auto;    margin-right: auto; width:9em;" alt="Disponible sur App Store" src="https://www.edd.dj/assets/images/download-on-the-app-store.png">
+                                </a><a class="logo" target="_blank" href="https://play.google.com/store/apps/details?id=dj.edd.eddmobile&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                    <img class="img-fluid" style="   margin-left: auto;    margin-right: auto; width:10em;" alt="Disponible sur Google Play" src="https://www.edd.dj/assets/images/fr_badge_web_generic.png">
+                                </a></div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="card-footer shadow-sm bg-opacity-75" dmx-style:background-color="'#005eb8'"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center text-capitalize mt-1 mb-4">
+                <a href="https://www.symantec.com/fr/fr/ssl-certificates" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px verdana,sans-serif; letter-spacing:.5px;text-align:center; margin:0px; padding:0px;"> propos des certificats SSL</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .form-container {
+        animation: fadeIn 1s ease-out;
+    }
+
+    .animated-img {
+        animation: slideIn 1.5s ease-out;
+    }
+
+
+
+    /* style.css */
+    /* You can add custom styles here if needed */
+    .card {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .btn {
+        float: right;
+    }
+
+    .form-step {
+        display: none;
+    }
+
+    .form-control {
+        background-color: #FAFAFA;
+    }
+
+    .form-select {
+        background-color: #FAFAFA;
+    }
+
+
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .form-control,
+    .form-select,
+    .btn {
+        animation: shake 0.5s;
+    }
+</style>
+
+<script>
+    function showStep(stepNumber) {
+  const steps = document.querySelectorAll('.form-step');
+  const totalSteps = steps.length;
+  const stepIndicator = document.getElementById('stepIndicator');
+
+  steps.forEach((step, index) => {
+    // Hide all steps
+    step.style.display = 'none';
+  });
+
+  // Show the current step
+  const currentStep = document.getElementById(`step${stepNumber}`);
+  if (currentStep) {
+    currentStep.style.display = 'block';
+    // Update the step indicator text
+    stepIndicator.innerText = `Etape ${stepNumber} sur ${totalSteps}`;
+  }
+}
+
+// Initialize to show the first step and update the indicator
+showStep(1);
+
+    function validateInput(input) {
+        // Replace any non-numeric characters with an empty string
+        input.value = input.value.replace(/[^0-9]/g, '');
+    }
+
+
+
+</script>
+
+<meta name="ac:route" content="/E-services/FicheDmd">

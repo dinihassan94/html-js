@@ -1,0 +1,19 @@
+{
+  "name": "db",
+  "module": "dbconnector",
+  "action": "connect",
+  "options": {
+    "client": "mysql",
+    "connection": {
+      "host": "db",
+      "port": 3306,
+      "user": "db_user",
+      "password": "ppPSdq27",
+      "database": "demanderaccordement"
+    },
+    "meta": {}
+  },
+  "actionFilePath": "file:///C:/Users/47699/Desktop/JsonDemandeRaccordement/app/modules/connections/db.json",
+  "serverType": "node",
+  "fileName": "db.json"
+}

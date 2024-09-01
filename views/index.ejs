@@ -1,0 +1,57 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="index" appconnect="local" components="{dmxBrowser:{}}" dmx-on:load="index.goto('E-services/FicheDmd.ejs')" dmx-on:ready="" -->
+<div is="dmx-browser" id="index"></div>
+<meta name="ac:route" content="/">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // Encryption function
+function encryptData(data) {
+    // Convert key to 32 bytes
+    var keyBytes = CryptoJS.enc.Utf8.parse('hXqN3pmgSaXnLQAU9jtCbM+sGXOdP0PCBqLT8eFxS3hX23i9t8IjjUNmONtaJL79B2lQgL78bVXMavcj5zoLaKPlJ1N/7KIUq8Kq7EoeEmQ=');
+
+    // Encrypt data with AES using the key
+    var encrypted = CryptoJS.AES.encrypt(data, keyBytes, {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.Pkcs7
+    });
+
+    // Return the ciphertext
+    return encrypted.toString();
+}
+
+// Decryption function
+function decryptData(ciphertext) {
+    // Convert key to 32 bytes
+    var keyBytes = CryptoJS.enc.Utf8.parse('hXqN3pmgSaXnLQAU9jtCbM+sGXOdP0PCBqLT8eFxS3hX23i9t8IjjUNmONtaJL79B2lQgL78bVXMavcj5zoLaKPlJ1N/7KIUq8Kq7EoeEmQ=');
+
+    // Decrypt ciphertext with AES using the key
+    var decrypted = CryptoJS.AES.decrypt(ciphertext, keyBytes, {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.Pkcs7
+    });
+
+    // Convert decrypted data to a string and return
+    return decrypted.toString(CryptoJS.enc.Utf8);
+}
+
+// Example usage
+var originalData = "Hello, World!";
+
+
+
+var encryptedData = encryptData(originalData);
+console.log("Encrypted:", encryptedData);
+
+
+
+var decryptedData = decryptData(encryptedData);
+console.log("Decrypted:", decryptedData);
+
+
+
+
+
+
+
+
+</script>

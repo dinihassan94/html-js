@@ -1,0 +1,43 @@
+[
+
+  {
+    "code_table": "STCL",
+    "id_ligne": 4,
+    "lib_court": "PRIVE",
+    "lib_long": "CLIENT PRIVE",
+    "nom_table": "STATUT SOCIAL",
+    "code_ligne": 1,
+    "code_suppr": "NULL",
+    "id_parent": "41"
+  },
+  {
+    "code_table": "STCL",
+    "id_ligne": 4,
+    "lib_court": "PRIVE",
+    "lib_long": "CLIENT PRIVE",
+    "nom_table": "STATUT SOCIAL",
+    "code_ligne": 1,
+    "code_suppr": "NULL",
+    "id_parent": "42"
+  },
+  {
+    "code_table": "STCL",
+    "id_ligne": 6,
+    "lib_court": "ADMIN ETRANGERE",
+    "lib_long": "ADMINISTRATION ETRANGERE",
+    "nom_table": "STATUT SOCIAL",
+    "code_ligne": 4,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  },
+  {
+    "code_table": "STCL",
+    "id_ligne": 267,
+    "lib_court": "ADMIN PUBLIQUE",
+    "lib_long": "ADMINISTRATION PUBLIQUE DJIBOUTIENNE",
+    "nom_table": "STATUT SOCIAL",
+    "code_ligne": 2,
+    "code_suppr": "NULL",
+    "id_parent": 42
+  }
+]

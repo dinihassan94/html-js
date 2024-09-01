@@ -1,0 +1,279 @@
+<!-- Wappler include fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="FicheDemande" appConnect="local" components="{dmxStateManagement:{},dmxPdfCreator:{},dmxBootstrap5TableGenerator:{}}" -->
+
+<dmx-serverconnect id="sc_demande" url="/api/Fichedmd" dmx-param:num_dmd="query.Num_dmd" dmx-on:done="run({runJS:{outputType:'text',function:'generatePDF'}})"></dmx-serverconnect>
+<dmx-query-manager id="QueryData"></dmx-query-manager>
+<meta name="ac:route" content="/E-services/FicheDemande">
+
+<style>
+    input[type="checkbox"] {
+        transform: scale(1.5);
+    }
+</style>
+<header class="text-center">
+
+    <p class="text-center mt-2 mb-1 small fw-bold">ELECTRICITE DE DJIBOUTI<br>DEMANDE D'INTERVENTION CLIENT</p><img src="/assets/images/arton142.png" width="40" class="img-fluid">
+</header>
+<div class="container-fluid pt-0 pb-0">
+
+
+    <div class="row mb-1">
+        <div class="col lh-1 small">
+            <div class="card mt-2 border border-dark-subtle">
+                <div class="card-body fw-bold text-truncate lh-1 pb-0 small">
+                    <p><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>TYPE DE CLIENT :&nbsp;&nbsp;<span style="font-weight: normal;">{{sc_demande.data.data[1].libelle}} / {{sc_demande.data.data[0].libelle}}</span></p>
+                    <p><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>MODELE DE DOSSIER :&nbsp;&nbsp;<span style="font-weight: normal;">{{sc_demande.data.modele_doc[0].modele}}</span></p>
+                    <p><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>INTERVENTION DEMANDEE :&nbsp;<span style="font-weight: normal;"> {{sc_demande.data.data[2].libelle}}</span></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row mb-1">
+        <div class="col lh-1 small">
+            <div class="card mt-1 border border-dark-subtle">
+                <div class="card-body lh-1 pt-2 pb-0">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="card-title lh-base small fw-bold"><i class="fas fa-folder-open"></i>&nbsp; DOCUMENTS REQUIS</h6>
+                            <div class="table-responsive lh-1">
+                                <table class="table table-bordered table-sm border-dark-subtle table-striped table-white">
+                                    <thead>
+                                        <tr>
+                                        </tr>
+                                    </thead>
+                                    <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="sc_demande.data.model_doc_affi" id="tableRepeat1">
+                                        <tr>
+                                            <td dmx-text="'- '+nom_doc" class="small"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-1">
+        <div class="col lh-1 small">
+            <div class="card mt-1 border border-dark-subtle">
+                <div class="card-body text-truncate small lh-1 pt-2 pb-0">
+
+
+
+                    <form id="infosClient">
+                        <div class="row">
+
+                            <div class="pt-0 pb-0 col-7">
+                                <div class="form-group mb-2 col">
+                                    <label for="Nom" class="form-label">NOM</label>
+                                    <input type="text" id="Nom" name="NOM" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].nom" class="form-control form-control-sm" disabled="true">
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="form-group mb-2">
+                                    <label for="Tel" class="form-label">TELEPHONE</label>
+                                    <input type="text" class="form-control form-control-sm" id="Tel" name="Tel" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].tel" disabled="true">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="pt-0 pb-0 col-7">
+                                <div class="form-group mb-2">
+                                    <label for="ADRESSE" class="form-label">ADRESSE</label>
+                                    <input type="text" class="form-control form-control-sm" id="ADRESSE" name="ADRESSE" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].adresse" disabled="true">
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="form-group mb-2">
+                                    <label for="EMAIL" class="form-label">EMAIL</label>
+                                    <input type="text" class="form-control form-control-sm" id="EMAIL" name="EMAIL" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].mail" disabled="true">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="pt-0 pb-0 col-4">
+                                <div class="form-group mb-2">
+                                    <label for="SUPPORT" class="form-label">SUPPORT/POTEAU LE PLUS PROCHE</label>
+                                    <input type="text" class="form-control form-control-sm" id="SUPPORT" name="SUPPORT" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].pl_proche" disabled="true">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group mb-2">
+                                    <label for="Nbrcompteur" class="form-label">NOMBRE DE COMPTEUR(S) SOUHAITE</label>
+                                    <input type="text" class="form-control form-control-sm" id="Nbrcompteur" name="Nbrcompteur" aria-describedby="input1_help" dmx-bind:value="1" disabled="true">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group mb-2">
+                                    <label for="puisance" class="form-label">PUISSANCE SOUHAITEE&nbsp; (KVA)</label>
+                                    <input type="text" class="form-control form-control-sm" id="puisance" name="puisance" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].ps_sht" disabled="true">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group mb-2 text-uppercase">
+                                    <label for="input1" class="form-label">Nombre de pièce éclairée</label>
+                                    <input type="text" class="form-control form-control-sm" id="input1" name="input1" aria-describedby="input1_help" dmx-bind:value="sc_demande.data.query[0].nbr_piece" disabled="true">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group mb-2 text-uppercase">
+                                    <label for="input2" class="form-label">Nombre de climatiseur</label>
+                                    <input type="text" class="form-control form-control-sm" id="input2" name="input2" aria-describedby="input2_help" dmx-bind:value="sc_demande.data.query[0].nbr_clim" disabled="true">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group mb-2 text-uppercase">
+                                    <label for="input3" class="form-label">Nombre de réfrigérateur</label>
+                                    <input type="text" class="form-control form-control-sm" id="input3" name="input3" aria-describedby="input3_help" dmx-bind:value="sc_demande.data.query[0].nbr_refrig" disabled="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="form-group mb-2">
+                                    <label for="input8" class="form-label">MOTIF(S) DE LA DEMANDE</label>
+                                    <input type="text" class="form-control form-control-sm" id="input8" name="Motif" aria-describedby="input1_help" disabled="true">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col">
+            <div class="card lh-1 mt-1 mb-1 border border-dark-subtle">
+                <div class="card-body text-truncate lh-1 small pt-2 pb-1">
+
+
+                    <p class="fw-bold small text-uppercase mb-2"><i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Etat du logement: (Cocher la bonne reponse)</p>
+                    <form id="form1">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="mt-2">Construction terminée ?</p>
+                            </div>
+                            <div class="pt-2 lh-1 col-6 col-sm-6">
+                                <div class="form-check form-check-inline">
+
+                                    <label class="form-check-label pt-1" for="input4">OUI</label><input class="form-check-input" type="checkbox" value="" id="input4" name="input5">
+                                </div>
+                                <div class="form-check form-check-inline">
+
+                                    <label class="form-check-label pt-1" for="input4">NON</label><input class="form-check-input" type="checkbox" value="" id="input41" name="input5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="mt-2">La mise à la terre a-t-elle été faite correctement ?</p>
+                            </div>
+                            <div class="pt-2 lh-1 col-6 col-sm-6">
+                                <div class="form-check form-check-inline">
+
+                                    <label class="form-check-label pt-1" for="input5">OUI</label><input class="form-check-input" type="checkbox" value="" id="input5" name="input6">
+                                </div>
+                                <div class="form-check form-check-inline">
+
+                                    <label class="form-check-label pt-1" for="input5">NON</label><input class="form-check-input" type="checkbox" value="" id="input51" name="input6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="mt-2">Avez-vous un permis de construire valide ?</p>
+                            </div>
+                            <div class="pt-2 lh-1 col-6 col-sm-6">
+                                <div class="form-check form-check-inline">
+
+                                    <label class="form-check-label pt-1" for="input6">OUI</label><input class="form-check-input" type="checkbox" value="" id="input6" name="input7">
+                                </div>
+                                <div class="form-check form-check-inline">
+
+                                    <label class="form-check-label pt-1" for="input6">NON</label><input class="form-check-input" type="checkbox" value="" id="input61" name="input7">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="container-fluid">
+
+    <p class="small lh-1 text-end mt-2 mb-5">Signature du client</p>
+    <div class="row">
+        <div class="col">
+            <div class="card border border-dark">
+                <div class="card-body pt-2 pb-2 small">
+                    <p class="card-text small fw-bold lh-1">NB : Si l'ensemble de ces informations n'est pas conforme aux exigences de l'Electricité de Djibouti, votre demande sera rejetée.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    function generatePDF() {
+    const wholePage = document.body;
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+    const randomNum = Math.floor(Math.random() * 1000); // Generate a random number between 0 and 999
+    const filename = `fichedemande_${year}${month}_${randomNum}.pdf`;
+
+    var opt = {
+        margin: 0.3,
+        filename: filename,
+        image: { type: 'jpeg', quality: 1 }, 
+        html2canvas: { scale: 4 }, // Set scale to 1
+        jsPDF: { 
+            unit: 'in', 
+            format: 'a4', 
+            orientation: 'portrait'
+        }
+    };
+
+    setTimeout(function() {
+        html2pdf().from(wholePage).set(opt).save();
+        
+    }, 500);
+}
+
+
+
+
+
+</script>
+
+
+<meta name="ac:route" content="/E-services/FicheDemande">

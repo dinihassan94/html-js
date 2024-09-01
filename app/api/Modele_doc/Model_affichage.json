@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "num_doc_tex"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "num_doc_text",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "edbdev",
+          "sql": {
+            "query": "select type_doc_tex from n_doc_analyse\nwhere NUM_LIGNE = :P1",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{$_GET.num_doc_tex}}",
+                "test": "44"
+              }
+            ]
+          }
+        },
+        "output": false,
+        "meta": [
+          {
+            "name": "type_doc_tex",
+            "type": "text"
+          }
+        ],
+        "outputType": "array"
+      },
+      {
+        "name": "custom",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "edbdev",
+          "sql": {
+            "query": "select distinct NOM_DOC from (\n\t\t\t select unnest(string_to_array(?, ',')) as type_doc \n\t\t\t\t     from dual) d,N_type_document td where d.type_doc=td.ID_TYPE_DOC\n\t\t\t and active=1 order by NOM_DOC\n",
+            "params": [
+              {
+                "name": "?",
+                "value": "{{num_doc_text[0].type_doc_tex}}"
+              }
+            ]
+          }
+        },
+        "output": true,
+        "meta": [
+          {
+            "name": "nom_doc",
+            "type": "text"
+          }
+        ],
+        "outputType": "array"
+      }
+    ]
+  }
+}

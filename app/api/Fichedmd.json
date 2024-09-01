@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "num_dmd"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "query",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "edbdev",
+          "sql": {
+            "query": "select num_dmd,usage,type_interv,statut,grp_clientel,modele_doc,nbr_clim,nbr_piece,nbr_refrig,nom,tel,adresse,mail,pl_proche,ps_sht from demande_web where num_dmd = :P1",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{$_GET.num_dmd}}",
+                "test": "240500001"
+              }
+            ]
+          },
+          "test": true
+        },
+        "meta": [
+          {
+            "name": "num_dmd",
+            "type": "text"
+          },
+          {
+            "name": "usage",
+            "type": "number"
+          },
+          {
+            "name": "type_interv",
+            "type": "number"
+          },
+          {
+            "name": "statut",
+            "type": "number"
+          },
+          {
+            "name": "grp_clientel",
+            "type": "number"
+          },
+          {
+            "name": "modele_doc",
+            "type": "number"
+          },
+          {
+            "name": "nbr_clim",
+            "type": "number"
+          },
+          {
+            "name": "nbr_piece",
+            "type": "number"
+          },
+          {
+            "name": "nbr_refrig",
+            "type": "number"
+          },
+          {
+            "name": "nom",
+            "type": "text"
+          },
+          {
+            "name": "tel",
+            "type": "number"
+          },
+          {
+            "name": "adresse",
+            "type": "text"
+          },
+          {
+            "name": "mail",
+            "type": "text"
+          },
+          {
+            "name": "pl_proche",
+            "type": "text"
+          },
+          {
+            "name": "ps_sht",
+            "type": "number"
+          }
+        ],
+        "type": "dbcustom_query",
+        "output": true
+      },
+      {
+        "name": "",
+        "module": "core",
+        "action": "condition",
+        "options": {
+          "if": "{{query[0].num_dmd!=Null}}",
+          "then": {
+            "steps": [
+              {
+                "name": "data",
+                "module": "dbupdater",
+                "action": "custom",
+                "options": {
+                  "connection": "edbdev",
+                  "sql": {
+                    "query": "SELECT id_ligne,lib_long as libelle FROM tables_valeurs tv,tsptest.demande_web dw\nwhere dw.num_dmd = :P1 AND tv.id_ligne IN (:P2,:P3,:P4) AND nvl(code_suppr,'N')='N'\nORDER BY CASE tv.id_ligne\n            WHEN :P2 THEN 1\n            WHEN :P3 THEN 2\n            WHEN :P4 THEN 3\n         END;",
+                    "params": [
+                      {
+                        "name": ":P1",
+                        "value": "{{query[0].num_dmd}}",
+                        "recid": 1
+                      },
+                      {
+                        "name": ":P2",
+                        "value": "{{query[0].usage}}",
+                        "recid": 2
+                      },
+                      {
+                        "name": ":P3",
+                        "value": "{{query[0].statut}}",
+                        "recid": 3
+                      },
+                      {
+                        "name": ":P4",
+                        "value": "{{query[0].type_interv}}",
+                        "recid": 4
+                      }
+                    ]
+                  },
+                  "test": true
+                },
+                "output": true,
+                "meta": [
+                  {
+                    "name": "id_ligne",
+                    "type": "number"
+                  },
+                  {
+                    "name": "libelle",
+                    "type": "text"
+                  }
+                ],
+                "outputType": "array"
+              },
+              {
+                "name": "modele_doc",
+                "module": "dbupdater",
+                "action": "custom",
+                "options": {
+                  "connection": "edbdev",
+                  "sql": {
+                    "query": "select NUM_LIGNE,MODELE from n_doc_analyse \nwhere num_ligne = :P1",
+                    "params": [
+                      {
+                        "name": ":P1",
+                        "value": "{{query[0].modele_doc}}",
+                        "test": ""
+                      }
+                    ]
+                  }
+                },
+                "output": true,
+                "meta": [
+                  {
+                    "name": "num_ligne",
+                    "type": "number"
+                  },
+                  {
+                    "name": "modele",
+                    "type": "text"
+                  }
+                ],
+                "outputType": "array"
+              },
+              {
+                "name": "model_doc_affi",
+                "module": "dbupdater",
+                "action": "custom",
+                "options": {
+                  "connection": "edbdev",
+                  "sql": {
+                    "query": "select nom_doc from (select num_ligne,modele,is_region,identification,replace (string_agg(nom_doc, ','),',',' ou ')as nom_doc\nfrom (select distinct num_ligne,modele,is_region,identification,td.nom_doc from n_type_document td,\n(select distinct num_ligne,modele,is_region,unnest(string_to_array(type_doc_tex, ','))  as id_type_doc from n_doc_analyse)d\n where d.id_type_doc=td.id_type_doc  and annulation='N' and identification=1\n)group by num_ligne,modele,identification,is_region\nunion all\nselect distinct num_ligne,modele, is_region,identification,td.nom_doc\nfrom n_type_document td,\n(select num_ligne,modele,is_region,unnest(string_to_array(type_doc_tex, ','))  as id_type_doc from n_doc_analyse)d\nwhere d.id_type_doc=td.id_type_doc  and annulation='N' and identification<>1\norder by num_ligne,identification desc ,nom_doc asc) where is_region='N' and num_ligne = :P1",
+                    "params": [
+                      {
+                        "name": ":P1",
+                        "value": "{{modele_doc[0].num_ligne}}",
+                        "test": "66"
+                      }
+                    ]
+                  }
+                },
+                "output": true,
+                "meta": [
+                  {
+                    "name": "nom_doc",
+                    "type": "text"
+                  }
+                ],
+                "outputType": "array"
+              }
+            ]
+          },
+          "else": {
+            "steps": {
+              "name": "message",
+              "module": "core",
+              "action": "response",
+              "options": {
+                "status": 500,
+                "data": "No data"
+              }
+            }
+          }
+        },
+        "outputType": "boolean",
+        "output": false
+      }
+    ]
+  }
+}

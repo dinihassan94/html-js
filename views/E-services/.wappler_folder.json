@@ -1,0 +1,22 @@
+{
+  "FicheDmd.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "FicheDemande.ejs": {
+    "layoutPage": "fichedmd",
+    "description": ""
+  },
+  "test.ejs": {
+    "layoutPage": "fichedmd",
+    "description": ""
+  },
+  "TelechargementFicheDmd.ejs": {
+    "layoutPage": "fichedmd",
+    "description": ""
+  },
+  "gmail.ejs": {
+    "layoutPage": "fichedmd",
+    "description": ""
+  }
+}
